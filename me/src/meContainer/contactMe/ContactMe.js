@@ -54,6 +54,9 @@ export default function ContactMe(props) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
+        setName("");
+        setEmail("");
+        setMessage("");
       }
     } catch (error) {
       console.log(error);
