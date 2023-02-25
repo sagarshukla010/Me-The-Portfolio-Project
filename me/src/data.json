@@ -1,0 +1,44 @@
+{
+    "resume": {
+        "resumeBullets": [
+            {
+                "label": "Education",
+                "logoSrc": "education.svg"
+            },
+            {
+                "label": "Work History",
+                "logoSrc": "work-history.svg"
+            },
+            {
+                "label": "Programming Skills",
+                "logoSrc": "programming-skills.svg"
+            },
+            {
+                "label": "Projects",
+                "logoSrc": "projects.svg"
+            },
+            {
+                "label": "Interests",
+                "logoSrc": "interests.svg"
+            }
+        ]
+    },
+    "aboutMe": {
+        "description": "Greetings, I would like to introduce myself by first mentioning that I am a passionate software developer with a flavor of interest in the field of research in computer science domain, I am experienced in software development with the primary language as NodeJS and JavaScript in the jio platforms limited, although for competitive programming purpose I prefer java as my first language, moreover in my development experience I have learned to use many dev tools like Kubernetes, Kibana, postman, Kafka, sequelize and many more, in addition to that my data structures and algorithms skills had helped me to optimize my created APIs to a new level, I always try to learn and explore new things in search of various opportunities in the field of software development.",
+        "highlights": {
+            "bullets": [
+                "Full Stack Web and Mobile Development",
+                "Interactive Front end as per the design",
+                "React and React Native",
+                "Redux for state Management",
+                "Building Rest API's",
+                "Managing DataBase"
+            ],
+            "heading": "Here are a few Highlights:"
+        }
+    },
+    "profile": {
+        "profileRoleTagLine": "Having expertise in creating frontend and backend applications..."
+    },
+    "testimonial":{}
+}
