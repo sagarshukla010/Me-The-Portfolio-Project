@@ -103,7 +103,7 @@ export default function Resume(props) {
             <span>{skill.skills}</span>
             <div className="skill-percentage">
               <div
-                className="active-percentage"
+                className="active-percentage-bar"
                 style={{ width: skill.ratingPercentage + "%" }}
               ></div>
             </div>

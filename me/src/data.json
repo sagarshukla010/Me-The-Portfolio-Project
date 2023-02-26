@@ -110,25 +110,29 @@
                     "description": "The application helps to predict the accurate weather conditions and temperature"
                 }
             ],
-            "workHistory": [{
-               "heading":"Cognizant Technology Solutions",
-               "subHeading":"Jr. Software Engineer",
-               "fromDate":"Nov-2021",
-               "toDate":"Present",
-               "descriptions": [
-                "Currently Working as a MERN Stack Web and Mobile Developer.",
-                "--> Developed a web application for calculating the commission of the tour leaders on the basis of different category of products , nationality of the customer and check-in/Check-out time. The application is designed to show the commission in real time as the billing of the product happens.",
-                "--> Developed a web application for checking the scheduled flight and managing products for custom clearance.",
-                "--> Designed the project structure and build the backend logic code of the application, via scheduling daily standup calls, fixing bug and smooth deployment of the build."
-               ]
-            },
-            {
-                "heading":"Jio Platforms Limited",
-                "subHeading":"Software Development Engineer",
-                "fromDate":"July-2019",
-                "toDate":"Oct-2021",
-                "descriptions": [""]
-            }]
+            "workHistory": [
+                {
+                    "heading": "Cognizant Technology Solutions",
+                    "subHeading": "Jr. Software Engineer",
+                    "fromDate": "Nov-2021",
+                    "toDate": "Present",
+                    "descriptions": [
+                        "Currently Working as a MERN Stack Web and Mobile Developer.",
+                        "--> Developed a web application for calculating the commission of the tour leaders on the basis of different category of products , nationality of the customer and check-in/Check-out time. The application is designed to show the commission in real time as the billing of the product happens.",
+                        "--> Developed a web application for checking the scheduled flight and managing products for custom clearance.",
+                        "--> Designed the project structure and build the backend logic code of the application, via scheduling daily standup calls, fixing bug and smooth deployment of the build."
+                    ]
+                },
+                {
+                    "heading": "Jio Platforms Limited",
+                    "subHeading": "Software Development Engineer",
+                    "fromDate": "July-2019",
+                    "toDate": "Oct-2021",
+                    "descriptions": [
+                        ""
+                    ]
+                }
+            ]
         }
     },
     "aboutMe": {
