@@ -44,16 +44,91 @@
                 }
             ],
             "programmingSkillsDetails": [
-                { "skills": "JavaScript", "ratingPercentage": 85 },
-                { "skills": "React JS", "ratingPercentage": 85 },
-                { "skills": "React-Native", "ratingPercentage": 85 },
-                { "skills": "Express JS", "ratingPercentage": 89 },
-                { "skills": "NodeJS", "ratingPercentage": 89 },
-                { "skills": "Mongo DB", "ratingPercentage": 70 },
-                { "skills": "Core Java", "ratingPercentage": 80 },
-                { "skills": "HTML", "ratingPercentage": 80 },
-                { "skills": "CSS", "ratingPercentage": 80 }
-              ]
+                {
+                    "skills": "JavaScript",
+                    "ratingPercentage": 85
+                },
+                {
+                    "skills": "React JS",
+                    "ratingPercentage": 85
+                },
+                {
+                    "skills": "React-Native",
+                    "ratingPercentage": 85
+                },
+                {
+                    "skills": "Express JS",
+                    "ratingPercentage": 89
+                },
+                {
+                    "skills": "NodeJS",
+                    "ratingPercentage": 89
+                },
+                {
+                    "skills": "Mongo DB",
+                    "ratingPercentage": 70
+                },
+                {
+                    "skills": "Core Java",
+                    "ratingPercentage": 80
+                },
+                {
+                    "skills": "HTML",
+                    "ratingPercentage": 80
+                },
+                {
+                    "skills": "CSS",
+                    "ratingPercentage": 80
+                }
+            ],
+            "projectDetails": [
+                {
+                    "title": "Personal Portfolio Website",
+                    "duration": {
+                        "fromDate": 2020,
+                        "toDate": 2021
+                    },
+                    "subHeading": "Technology Used: ReactJS, BootStrap",
+                    "description": "A personal portfolio website to showcase all my details and projects at one place."
+                },
+                {
+                    "title": "Home Food Mobile Application",
+                    "duration": {
+                        "fromDate": 2020,
+                        "toDate": 2021
+                    },
+                    "subHeading": "Technology Used: React-Native, Redux, BootStrap, Google-FireBase",
+                    "description": "This application makes users order their daily meal by searching their favorite restaurants near their location by tracking it with the map feature, also the application is secured with a Gmail authorization login screen, moreover, a user is also able to create their profile and all this data is stored and hosted by the google firebase."
+                },
+                {
+                    "title": "Weather Prediction Web-Application",
+                    "duration": {
+                        "fromDate": 2022,
+                        "toDate": 2022
+                    },
+                    "subHeading": "Technology Used: NodeJS, ExpressJS, HeroKu",
+                    "description": "The application helps to predict the accurate weather conditions and temperature"
+                }
+            ],
+            "workHistory": [{
+               "heading":"Cognizant Technology Solutions",
+               "subHeading":"Jr. Software Engineer",
+               "fromDate":"Nov-2021",
+               "toDate":"Present",
+               "descriptions": [
+                "Currently Working as a MERN Stack Web and Mobile Developer.",
+                "--> Developed a web application for calculating the commission of the tour leaders on the basis of different category of products , nationality of the customer and check-in/Check-out time. The application is designed to show the commission in real time as the billing of the product happens.",
+                "--> Developed a web application for checking the scheduled flight and managing products for custom clearance.",
+                "--> Designed the project structure and build the backend logic code of the application, via scheduling daily standup calls, fixing bug and smooth deployment of the build."
+               ]
+            },
+            {
+                "heading":"Jio Platforms Limited",
+                "subHeading":"Software Development Engineer",
+                "fromDate":"July-2019",
+                "toDate":"Oct-2021",
+                "descriptions": [""]
+            }]
         }
     },
     "aboutMe": {

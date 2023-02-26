@@ -76,49 +76,26 @@ export default function Resume(props) {
       />)}
     </div>,
     <div className="resume-screen-container" key="work-history">
-      <ResumeHeading
-        heading={"Cognizant Technology Solutions"}
-        subHeading={"Jr. Software Engineer"}
-        fromDate={"Nov-2021"}
-        toDate={"Present"}
-      />
-
-      <div className="experience-description">
-        <span className="resume-description-text">
-          Currently Working as a MERN Stack Web and Mobile Developer.
-        </span>
-        <br/>
-        <span className="resume-description-text">
-          • Developed a web application for calculating the commission of the
-          tour leaders on the basis of different category of products ,
-          nationality of the customer and check-in/Check-out time. The
-          application is designed to show the commission in real time as the
-          billing of the product happens.
-        </span>
-        <br />
-        <span>
-          {" "}
-          • Developed a web application for checking the scheduled flight and
-          managing products for custom clearance.
-        </span>
-        <br />
-        <span>
-          • Designed the project structure and build the backend logic code of
-          the application, via scheduling daily standup calls, fixing bug and
-          smooth deployment of the build.
-        </span>
-      </div>
-
-      <ResumeHeading
-        heading={"Jio Platforms Limited"}
-        subHeading={"Software Development Engineer"}
-        fromDate={"July-2019"}
-        toDate={"Oct-2021"}
-      />
+      {data.resume.resumeDetails.workHistory.map(wH => 
+       <><ResumeHeading
+          heading={wH.heading}
+          subHeading={wH.subHeading}
+          fromDate={wH.fromDate}
+          toDate={wH.toDate} />
+          <div className="experience-description">
+            {wH.descriptions.map(wHD => 
+              <>
+              <span className="resume-description-text">
+                {wHD}
+              </span>
+              <br />
+              </>
+            )}
+          </div>
+          </>
+        )}
     </div>,
-    <div
-      className="resume-screen-container programming-skills-container"
-      key="programming-skills">
+    <div className="resume-screen-container programming-skills-container" key="programming-skills">
       {data.resume.resumeDetails.programmingSkillsDetails.map((skill, index) => {
         return (
           <div className="skill-parent" key={index}>
@@ -135,7 +112,7 @@ export default function Resume(props) {
       })}
     </div>,
     <div className="resume-screen-container" key="projects">
-      {projectDetails.map((projectDetails, index) => (
+      {data.resume.resumeDetails.projectDetails.map((projectDetails, index) => (
         <ResumeHeading
           key={index}
           heading={projectDetails.title}
@@ -151,7 +128,7 @@ export default function Resume(props) {
         heading="fhewjbfkejwb"
         description="wefwebfjewbfjebwfhjbfjhewbfjhewb"
       />
-    </div>,
+    </div>
   ];
 
   const handleCarousal = (index) => {
