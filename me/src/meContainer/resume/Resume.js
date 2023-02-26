@@ -40,18 +40,6 @@ export default function Resume(props) {
     );
   };
 
-  const programmingSkillsDetails = [
-    { skills: "JavaScript", ratingPercentage: 85 },
-    { skills: "React JS", ratingPercentage: 85 },
-    { skills: "React-Native", ratingPercentage: 85 },
-    { skills: "Express JS", ratingPercentage: 89 },
-    { skills: "NodeJS", ratingPercentage: 89 },
-    { skills: "Mongo DB", ratingPercentage: 70 },
-    { skills: "Core Java", ratingPercentage: 80 },
-    { skills: "HTML", ratingPercentage: 80 },
-    { skills: "CSS", ratingPercentage: 80 },
-  ];
-
   const projectDetails = [
     {
       title: "Personal Portfolio Website",
@@ -79,30 +67,13 @@ export default function Resume(props) {
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
+      {data.resume.resumeDetails.educationDetails.map(eduD => 
       <ResumeHeading
-        heading={"Gyan Ganga Institute of Technology and Sciences"}
-        subHeading={
-          "Bachelors of Engineering in Electronics and Communication, CGPA: 8.46"
-        }
-        fromDate={"2015"}
-        toDate={"2019"}
-      />
-      <ResumeHeading
-        heading={"Advance Cource in Computer Hardware Maintainance"}
-        subHeading={
-          "Studied the computer parts assambling and deassembling, windows command line and BIOS Setup"
-        }
-        fromDate={"2015"}
-        toDate={"2015"}
-      />
-      <ResumeHeading
-        heading={"Small Wonder Senior Secondary School"}
-        subHeading={
-          "Specialization in Physics, Chemistry, Maths and Computer Science"
-        }
-        fromDate={"2013"}
-        toDate={"2015"}
-      />
+        heading= {eduD.heading}
+        subHeading={eduD.subHeading}
+        fromDate={eduD.fromDate}
+        toDate={eduD.toDate}
+      />)}
     </div>,
     <div className="resume-screen-container" key="work-history">
       <ResumeHeading
@@ -148,7 +119,7 @@ export default function Resume(props) {
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills">
-      {programmingSkillsDetails.map((skill, index) => {
+      {data.resume.resumeDetails.programmingSkillsDetails.map((skill, index) => {
         return (
           <div className="skill-parent" key={index}>
             <div className="heading-bullet"></div>

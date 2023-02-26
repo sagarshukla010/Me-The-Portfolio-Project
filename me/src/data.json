@@ -21,7 +21,40 @@
                 "label": "Interests",
                 "logoSrc": "interests.svg"
             }
-        ]
+        ],
+        "resumeDetails": {
+            "educationDetails": [
+                {
+                    "heading": "Gyan Ganga Institute of Technology and Sciences",
+                    "subHeading": "Bachelors of Engineering in Electronics and Communication, CGPA: 8.46",
+                    "fromDate": "2015",
+                    "toDate": "2019"
+                },
+                {
+                    "heading": "Advance Cource in Computer Hardware Maintainance",
+                    "subHeading": "Studied the computer parts assambling and deassembling, windows command line and BIOS Setup",
+                    "fromDate": "2015",
+                    "toDate": "2015"
+                },
+                {
+                    "heading": "Small Wonder Senior Secondary School",
+                    "subHeading": "Specialization in Physics, Chemistry, Maths and Computer Science",
+                    "fromDate": "2013",
+                    "toDate": "2015"
+                }
+            ],
+            "programmingSkillsDetails": [
+                { "skills": "JavaScript", "ratingPercentage": 85 },
+                { "skills": "React JS", "ratingPercentage": 85 },
+                { "skills": "React-Native", "ratingPercentage": 85 },
+                { "skills": "Express JS", "ratingPercentage": 89 },
+                { "skills": "NodeJS", "ratingPercentage": 89 },
+                { "skills": "Mongo DB", "ratingPercentage": 70 },
+                { "skills": "Core Java", "ratingPercentage": 80 },
+                { "skills": "HTML", "ratingPercentage": 80 },
+                { "skills": "CSS", "ratingPercentage": 80 }
+              ]
+        }
     },
     "aboutMe": {
         "description": "Greetings, I would like to introduce myself by first mentioning that I am a passionate software developer with a flavor of interest in the field of research in computer science domain, I am experienced in software development with the primary language as NodeJS and JavaScript in the jio platforms limited, although for competitive programming purpose I prefer java as my first language, moreover in my development experience I have learned to use many dev tools like Kubernetes, Kibana, postman, Kafka, sequelize and many more, in addition to that my data structures and algorithms skills had helped me to optimize my created APIs to a new level, I always try to learn and explore new things in search of various opportunities in the field of software development.",
@@ -40,5 +73,5 @@
     "profile": {
         "profileRoleTagLine": "Having expertise in creating frontend and backend applications..."
     },
-    "testimonial":{}
+    "testimonial": {}
 }
