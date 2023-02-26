@@ -194,7 +194,7 @@ export default function Resume(props) {
 
   const getBullets = () => {
     let resumeBullets = data.resume.resumeBullets;
-    return resumeBullets.map((bullet, index) => (
+    return (resumeBullets.map((bullet, index) => (
       <div
         onClick={() => handleCarousal(index)}
         className={
@@ -209,7 +209,7 @@ export default function Resume(props) {
         />
         <span>{bullet.label}</span>
       </div>
-    ));
+    )));
   };
 
   const getResumeScreen = () => {
@@ -218,7 +218,7 @@ export default function Resume(props) {
         className="resume-details-carousal"
         style={carousalOffSetStyle.style}
       >
-        {resumeDetails.map((RD) => RD)}
+        {resumeDetails[selectedBulletIndex]}
       </div>
     );
   };
