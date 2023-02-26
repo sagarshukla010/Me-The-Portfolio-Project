@@ -40,31 +40,6 @@ export default function Resume(props) {
     );
   };
 
-  const projectDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: 2020, toDate: 2021 },
-      subHeading: "Technology Used: ReactJS, BootStrap",
-      description:
-        "A personal portfolio website to showcase all my details and projects at one place.",
-    },
-    {
-      title: "Home Food Mobile Application",
-      duration: { fromDate: 2020, toDate: 2021 },
-      subHeading:
-        "Technology Used: React-Native, Redux, BootStrap, Google-FireBase",
-      description:
-        "This application makes users order their daily meal by searching their favorite restaurants near their location by tracking it with the map feature, also the application is secured with a Gmail authorization login screen, moreover, a user is also able to create their profile and all this data is stored and hosted by the google firebase.",
-    },
-    {
-      title: "Weather Prediction Web-Application",
-      duration: { fromDate: 2022, toDate: 2022 },
-      subHeading: "Technology Used: NodeJS, ExpressJS, HeroKu",
-      description:
-        "The application helps to predict the accurate weather conditions and temperature",
-    },
-  ];
-
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       {data.resume.resumeDetails.educationDetails.map(eduD => 
