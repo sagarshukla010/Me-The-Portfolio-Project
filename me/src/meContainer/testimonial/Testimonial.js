@@ -1,5 +1,6 @@
 import React from "react";
 import './Testimonial.css';
+import data from "../../data.json";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -48,162 +49,44 @@ export default function Testimonial(props) {
         <div className="container">
           <div className="row">
             <OwlCarousel className="owl-carousel" id="testimonial-carousel" {...options}>
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
-                      <i className="fa fa-quote-right" />
-                    </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    {/* <img
-                      src="img/Testimonial/lady.png"
-                      alt="no internet connection"
-                    /> */}
-                    <h5>Gaurav Sukhatmay</h5>
-                    <p>Software consulting Engineer</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
-                      <i className="fa fa-quote-right" />
-                    </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    {/* <img
-                      src="img/Testimonial/lady.png"
-                      alt="no internet connection"
-                    /> */}
-                    <h5>Gaurav Sukhatmay</h5>
-                    <p>Software consulting Engineer</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
-                      <i className="fa fa-quote-right" />
-                    </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    {/* <img
-                      src="img/Testimonial/lady.png"
-                      alt="no internet connection"
-                    /> */}
-                    <h5>Gaurav Sukhatmay</h5>
-                    <p>Software consulting Engineer</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
-                      <i className="fa fa-quote-right" />
-                    </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    {/* <img
-                      src="img/Testimonial/lady.png"
-                      alt="no internet connection"
-                    /> */}
-                    <h5>Gaurav Sukhatmay</h5>
-                    <p>Software consulting Engineer</p>
-                  </div>
-                </div>
-              </div>
-
+              {data.testimonial.peopleDetails.map(pD => 
+                 <div className="col-lg-12">
+                 <div className="testi-item">
+                   <div className="testi-comment">
+                     <p>
+                       <i className="fa fa-quote-left" />
+                        {pD.recommendationGiven}
+                       <i className="fa fa-quote-right" />
+                     </p>
+                     <ul className="stars list-unstyled">
+                       <li>
+                         <i className="fa fa-star" />
+                       </li>
+                       <li>
+                         <i className="fa fa-star" />
+                       </li>
+                       <li>
+                         <i className="fa fa-star" />
+                       </li>
+                       <li>
+                         <i className="fa fa-star-half-alt" />
+                       </li>
+                       <li>
+                         <i className="fa fa-star" />
+                       </li>
+                     </ul>
+                   </div>
+                   <div className="client-info">
+                     {/* <img
+                       src="../../assets/Testimonial/Gaurav Small.png"
+                       alt="no internet connection"
+                     /> */}
+                     <h5>{pD.name}</h5>
+                     <p>{pD.designation}</p>
+                   </div>
+                 </div>
+               </div>
+                )}
             </OwlCarousel>
           </div>
         </div>

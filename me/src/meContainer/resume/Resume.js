@@ -98,12 +98,18 @@ export default function Resume(props) {
         />
       ))}
     </div>,
-    <div className="resume-screen-container" key="interest">
+    <div className="resume-screen-container" key="projects">
+    {data.resume.resumeDetails.projectDetails.map((projectDetails, index) => (
       <ResumeHeading
-        heading="fhewjbfkejwb"
-        description="wefwebfjewbfjebwfhjbfjhewbfjhewb"
+        key={index}
+        heading={projectDetails.title}
+        subHeading={projectDetails.subHeading}
+        description={projectDetails.description}
+        fromDate={projectDetails.duration.fromDate}
+        toDate={projectDetails.duration.toDate}
       />
-    </div>
+    ))}
+  </div>,
   ];
 
   const handleCarousal = (index) => {

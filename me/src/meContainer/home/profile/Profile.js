@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import "./Profile.css";
 import data from "../../../data.json";
 import ScrollService from "../../../utilities/ScrollService";
@@ -11,21 +11,21 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="/#">
+              {/* <a href="/#">
                 <i className="fa fa-facebook-square"></i>
               </a>
               <a href="/#">
                 <i className="fa fa-google-plus-square"></i>
-              </a>
-              <a href="/#">
+              </a> */}
+              <a href="https://github.com/sagarshukla010">
                 <i className="fa fa-github-square"></i>
               </a>
-              <a href="/#">
+              <a href="https://www.youtube.com/@sagarshukla1194">
                 <i className="fa fa-youtube-square"></i>
               </a>
-              <a href="/#">
+              {/* <a href="/#">
                 <i className="fa fa-twitter"></i>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -41,7 +41,7 @@ export default function Profile() {
               {" "}
               <h1>
                 {" "}
-                <Typical
+                {/* <Typical
                   loop={Infinity}
                   steps={[
                     "Full Stack Developer",
@@ -51,7 +51,8 @@ export default function Profile() {
                     "Web app Developer",
                     2000,
                   ]}
-                />
+                /> */}
+                Welcome In My Portfolio
               </h1>
               <span className="profile-role-tagline">
                 {data.profile.profileRoleTagLine}
