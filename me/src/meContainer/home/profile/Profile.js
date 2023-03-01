@@ -23,9 +23,9 @@ export default function Profile() {
               <a href="https://www.youtube.com/@sagarshukla1194">
                 <i className="fa fa-youtube-square"></i>
               </a>
-              {/* <a href="/#">
-                <i className="fa fa-twitter"></i>
-              </a> */}
+              <a href="https://www.linkedin.com/in/sagar-shukla-b517b416a/">
+                <i className="fa fa-linkedin-square"></i>
+              </a>
             </div>
           </div>
 
