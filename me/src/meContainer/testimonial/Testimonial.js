@@ -9,13 +9,19 @@ import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 
+import GauravImage from "../../assets/Testimonial/GauravSmall.png";
+import padmaImage from "../../assets/Testimonial/padmaImage.jpeg";
+import mugunthanImage from "../../assets/Testimonial/MugunthanPic.jpeg";
+
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
+  // const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  let imgAry = [GauravImage, mugunthanImage, padmaImage];
 
   const options = {
     loop: true,
@@ -77,10 +83,10 @@ export default function Testimonial(props) {
                      </ul>
                    </div>
                    <div className="client-info">
-                     {/* <img
-                       src="../../assets/Testimonial/Gaurav Small.png"
+                     <img
+                       src={imgAry[pD.serialNumber]}
                        alt="no internet connection"
-                     /> */}
+                     />
                      <h5>{pD.name}</h5>
                      <p>{pD.designation}</p>
                    </div>

@@ -112,20 +112,26 @@
             ],
             "workHistory": [
                 {
+                    "heading": "Tech Mahindra Limited",
+                    "subHeading": "Sr. Software Engineer",
+                    "fromDate": "Dec-2022",
+                    "toDate": "Present",
+                    "descriptions": [
+                        ""
+                    ]
+                },
+                {
                     "heading": "Cognizant Technology Solutions",
                     "subHeading": "Jr. Software Engineer",
                     "fromDate": "Nov-2021",
-                    "toDate": "Present",
+                    "toDate": "Dec-2022",
                     "descriptions": [
-                        "Currently Working as a MERN Stack Web and Mobile Developer.",
-                        "--> Developed a web application for calculating the commission of the tour leaders on the basis of different category of products , nationality of the customer and check-in/Check-out time. The application is designed to show the commission in real time as the billing of the product happens.",
-                        "--> Developed a web application for checking the scheduled flight and managing products for custom clearance.",
-                        "--> Designed the project structure and build the backend logic code of the application, via scheduling daily standup calls, fixing bug and smooth deployment of the build."
+                        ""
                     ]
                 },
                 {
                     "heading": "Jio Platforms Limited",
-                    "subHeading": "Software Development Engineer",
+                    "subHeading": "Graduate Engineering Trainee",
                     "fromDate": "July-2019",
                     "toDate": "Oct-2021",
                     "descriptions": [
@@ -185,30 +191,40 @@
         "peopleDetails" : [{
             "name": "Gaurav Sukhatme",
             "designation": "Software consulting Engineer - Cisco | DevNet Associate",
-            "recommendationGiven": "It’s rare that you come across standout talent like Sagar. I've known him since middle school. I’m amazed by his ability to make friends with anyone, a skill he uses to full effect when presenting proposals. Sagar would be an asset to any company."
+            "recommendationGiven": "It’s rare that you come across standout talent like Sagar. I've known him since middle school. I’m amazed by his ability to make friends with anyone, a skill he uses to full effect when presenting proposals. Sagar would be an asset to any company.",
+            "imagelocation" : "../../assets/Testimonial/GauravSmall.png",
+            "serialNumber": 0
         },
         {
             "name": "Mugunthan Gunasekaran",
-            "designation": "Major Incident |Service Delivery Manager at Cognizant| ITIL| POS Functional Consultant| Omni Retail| Store System Implementation| Project Management| Digital Application Support",
-            "recommendationGiven": "Sagar has been exceptional in his work so far. He was never hesitant to face challenges. The journey so far has not been easy but still, Sagar stood up every single time and went beyond his call of duty. His dedication commitment and never settling attitude have saved the project from being escalated, not just once but almost every week. Sagar is definitely an asset to the team!"
+            "designation": "Service Delivery Manager | Cognizant",
+            "recommendationGiven": "Sagar has been exceptional in his work so far. He was never hesitant to face challenges. The journey so far has not been easy but still, Sagar stood up every single time and went beyond his call of duty. His dedication commitment and never settling attitude have saved the project from being escalated, not just once but almost every week. Sagar is definitely an asset to the team!",
+            "imagelocation" : "../../assets/Testimonial/MugunthanPic.jpeg",
+            "serialNumber": 1
         },
         {
             "name": "Padmashree Subramanian",
             "designation": "Manager - Projects | Cognizant",
             "recommendationGiven": "Sagar, your recent work on Jenkins issue resolution has been commendable. The way you exhibited your focus and perseverance is very impressive and will take you to great heights. Your calmness throughout the battle under great pressure is an asset. Happy and proud to have you with us!! Keep up all the good work!",
-            "award": "Always striving, never settling - 26th April 2022"
+            "award": "Always striving, never settling - 26th April 2022",
+            "imagelocation" : "../../assets/Testimonial/padmaImage.jpeg",
+            "serialNumber": 2
         },
         {
             "name": "Padmashree Subramanian",
             "designation": "Manager - Projects | Cognizant",
             "recommendationGiven": "Thank you, Sagar - Sagar, if you think nobody noticed all your hard work and the enormous amount of effort that you put in to cross the hurdles, you are wrong! Your unswerving commitment and focus are an asset and will take you to great heights. Thank you so much for all your good work - Much appreciated Keep up the good work.",
-            "award":"Always striving, never settling - 23rd May 2022"
+            "award":"Always striving, never settling - 23rd May 2022",
+            "imagelocation" : "../../assets/Testimonial/padmaImage.jpeg",
+            "serialNumber": 2
         },
         {
             "name": "Padmashree Subramanian",
             "designation": "Manager - Projects | Cognizant",
             "recommendationGiven": "THE MOUNTAIN MOVER - Sagar, your support on the ground to solve all the issues is highly commendable. You have never left any stones unturned, and your attitude to work as a team and keep cool amidst all the pressure is something I would like to learn from you! Best wishes - Keep up the good work",
-            "award": "Working as one - 30th May 2022"
+            "award": "Working as one - 30th May 2022",
+            "imagelocation" : "../../assets/Testimonial/padmaImage.jpeg",
+            "serialNumber": 2
         }
     ]
     }

@@ -79,7 +79,7 @@
     min-height: 60px;
 }
 
-.testimonial-section .client-info img{
+.testimonial-section .testi-item .client-info img{
     height: 70px;
     width: 70px;
     border: 2px solid transparent;
