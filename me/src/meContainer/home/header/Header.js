@@ -45,7 +45,7 @@ export default function Header() {
     let screenComponent = document.getElementById(screen.screen_name);
     if (!screenComponent) return;
 
-    screenComponent.scrollIntoView({ behaviour: "smooth" });
+    screenComponent.scrollIntoView({ behavior: "smooth" });
     setSelectedScreen(index);
     setShowHeaderOptions(false);
   };
