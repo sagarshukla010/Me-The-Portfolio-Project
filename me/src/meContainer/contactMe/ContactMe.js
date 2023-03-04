@@ -70,9 +70,7 @@ export default function ContactMe(props) {
         <div className="col">
           <h2>
             {" "}
-            <Typical loop={Infinity} steps={[
-              "Get In Touch ☎️", 2000
-              ]}/>
+            <Typical loop={Infinity} steps={["Get In Touch ☎️", 2000]} />
           </h2>
           <a href="https://github.com/sagarshukla010">
             <i className="fa fa-github"></i>

@@ -129,12 +129,11 @@ form {
   }
 }
 
-button .load{
+button .load {
   width: 100%;
 }
 
-button .load img{
+button .load img {
   width: 60px;
   color: green;
 }
-

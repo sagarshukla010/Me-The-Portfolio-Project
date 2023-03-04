@@ -1,5 +1,5 @@
 import React from "react";
-import './Testimonial.css';
+import "./Testimonial.css";
 import data from "../../data.json";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -19,7 +19,7 @@ export default function Testimonial(props) {
     Animations.animations.fadeInScreen(props.id);
   };
   // const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   let imgAry = [GauravImage, mugunthanImage, padmaImage];
 
@@ -54,51 +54,58 @@ export default function Testimonial(props) {
       <section className="testimonial-section" id={props.id || ""}>
         <div className="container">
           <div className="row">
-            <OwlCarousel className="owl-carousel" id="testimonial-carousel" {...options}>
-              {data.testimonial.peopleDetails.map(pD => 
-                 <div className="col-lg-12">
-                 <div className="testi-item">
-                   <div className="testi-comment">
-                     <p>
-                       <i className="fa fa-quote-left" />
+            <OwlCarousel
+              className="owl-carousel"
+              id="testimonial-carousel"
+              {...options}
+            >
+              {data.testimonial.peopleDetails.map((pD) => (
+                <div className="col-lg-12">
+                  <div className="testi-item">
+                    <div className="testi-comment">
+                      <p>
+                        <i className="fa fa-quote-left" />
                         {pD.recommendationGiven}
-                       <i className="fa fa-quote-right" />
-                     </p>
-                     <ul className="stars list-unstyled">
-                       <li>
-                         <i className="fa fa-star" />
-                       </li>
-                       <li>
-                         <i className="fa fa-star" />
-                       </li>
-                       <li>
-                         <i className="fa fa-star" />
-                       </li>
-                       <li>
-                         <i className="fa fa-star-half-alt" />
-                       </li>
-                       <li>
-                         <i className="fa fa-star" />
-                       </li>
-                     </ul>
-                   </div>
-                   <div className="client-info">
-                     <img
-                       src={imgAry[pD.serialNumber]}
-                       alt="no internet connection"
-                     />
-                     <h5>{pD.name}</h5>
-                     <p>{pD.designation}</p>
-                   </div>
-                 </div>
-               </div>
-                )}
+                        <i className="fa fa-quote-right" />
+                      </p>
+                      <ul className="stars list-unstyled">
+                        <li>
+                          <i className="fa fa-star" />
+                        </li>
+                        <li>
+                          <i className="fa fa-star" />
+                        </li>
+                        <li>
+                          <i className="fa fa-star" />
+                        </li>
+                        <li>
+                          <i className="fa fa-star-half-alt" />
+                        </li>
+                        <li>
+                          <i className="fa fa-star" />
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="client-info">
+                      <img
+                        src={imgAry[pD.serialNumber]}
+                        alt="no internet connection"
+                      />
+                      <h5>{pD.name}</h5>
+                      <p>{pD.designation}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </OwlCarousel>
           </div>
         </div>
       </section>
       <div className="footer-image">
-        <img src={require('../../assets/Home/shape-bg.png')} alt='no.. internet connection'/>
+        <img
+          src={require("../../assets/Home/shape-bg.png")}
+          alt="no.. internet connection"
+        />
       </div>
     </div>
   );

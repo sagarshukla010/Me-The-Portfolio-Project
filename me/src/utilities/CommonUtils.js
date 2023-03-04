@@ -24,7 +24,7 @@ export const TOTAL_SCREEN = [
   {
     screen_name: "ContactMe",
     component: ContactMe,
-  }
+  },
 ];
 
 export const GET_SCREEN_INDEX = (screen_name) => {
