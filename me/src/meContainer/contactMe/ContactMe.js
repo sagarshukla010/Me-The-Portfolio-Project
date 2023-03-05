@@ -15,7 +15,7 @@ export default function ContactMe(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
+  // const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const [userName, setName] = useState("");
@@ -85,7 +85,7 @@ export default function ContactMe(props) {
         <div className="back-form">
           <div className="img-back">
             <h4>Send Your Email Here!</h4>
-            <img src={imgBack} alt="image not found" />
+            <img src={imgBack} alt="imageP not found" />
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
@@ -103,7 +103,7 @@ export default function ContactMe(props) {
                 send <i className="fa fa-paper-plane" />
                 {bool ? (
                   <b className="load">
-                    <img src={load1} alt="image not responding"></img>
+                    <img src={load1} alt="imageP not responding"></img>
                   </b>
                 ) : (
                   ""
