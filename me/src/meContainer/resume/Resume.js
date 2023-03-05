@@ -71,8 +71,28 @@ export default function Resume(props) {
         </>
       ))}
     </div>,
-    <div
-      className="resume-screen-container programming-skills-container"
+     <div className="resume-screen-container" key="internships">
+     {data.resume.resumeDetails.internships.map((intern) => (
+       <>
+         <ResumeHeading
+           heading={intern.heading}
+           subHeading={intern.subHeading}
+           description={intern.descriptions[0]}
+           fromDate={intern.fromDate}
+           toDate={intern.toDate}
+         />
+         {/* <div className="experience-description">
+           {intern.descriptions.map((internD) => (
+             <>
+               <span className="resume-description-text">{internD}</span>
+               <br />
+             </>
+           ))}
+         </div> */}
+       </>
+     ))}
+   </div>,
+    <div className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
       {data.resume.resumeDetails.programmingSkillsDetails.map(

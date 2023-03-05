@@ -6,11 +6,15 @@
                 "logoSrc": "education.svg"
             },
             {
-                "label": "Work History",
+                "label": " Work_History",
                 "logoSrc": "work-history.svg"
             },
             {
-                "label": "Programming Skills",
+                "label": "Internships",
+                "logoSrc": "work-history.svg"
+            },
+            {
+                "label": "Programming_Skills",
                 "logoSrc": "programming-skills.svg"
             },
             {
@@ -38,7 +42,7 @@
                 },
                 {
                     "heading": "Small Wonder Senior Secondary School",
-                    "subHeading": "Specialization in Physics, Chemistry, Maths and Computer Science",
+                    "subHeading": "Specialization in Physics, Chemistry, Maths and Computer Science, XII: 62%, X: 79.80%.",
                     "fromDate": "2013",
                     "toDate": "2015"
                 }
@@ -136,6 +140,35 @@
                     "toDate": "Oct-2021",
                     "descriptions": [
                         ""
+                    ]
+                },
+                {
+                    "heading": "ELTP Jabalpur - Part Time",
+                    "subHeading": "Assistant Faculty",
+                    "fromDate": "1st",
+                    "toDate": "30th, June 2019",
+                    "descriptions": [
+                        ""
+                    ]
+                }
+            ],
+            "internships": [
+                {
+                    "heading": "BrahMos AeroSpace - Full Time",
+                    "subHeading": "Internship Trainee",
+                    "fromDate": "1st",
+                    "toDate": "28th, July 2019",
+                    "descriptions": [
+                        "Implementation and usage of AL, ML, VR/AR, Computer Vision in the missile Integration and guidance system.."
+                    ]
+                },
+                {
+                    "heading": "Bharat Sanchar Nigam Limited - Full Time",
+                    "subHeading": "Internship Trainee",
+                    "fromDate": "1st",
+                    "toDate": "15th, June 2018",
+                    "descriptions": [
+                        "Concepts of Telecommunication Engineering by studying signal processing and analyzing 2G (GSM), 3G (WCDMA), 3.75 (HSPA+), 4G (LTE & VoLTE), and 5G technologies with the help of MATLAB as a simulation and computation tool, also studied about various physical devices like an antenna with its different types, oscillators, etc."
                     ]
                 }
             ],
