@@ -18,35 +18,35 @@ export default function ContactMe(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  const [name, setName] = useState("");
+  const [userName, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
 
   const handleName = (e) => {
-    setName(e.target.name);
+    setName(e.target.value);
   };
 
   const handleEmail = (e) => {
-    setEmail(e.target.email);
+    setEmail(e.target.value);
   };
 
   const handleMessage = (e) => {
-    setMessage(e.target.message);
+    setMessage(e.target.value);
   };
 
   const submitForm = async (e) => {
     e.preventDefault();
     try {
       let data = {
-        name,
+        userName,
         email,
         message,
       };
       setBool(true);
       const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
+      if (userName.length === 0 || email.length === 0 || message.length === 0) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
@@ -89,8 +89,8 @@ export default function ContactMe(props) {
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
-            <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} value={name} />
+            <label htmlFor="userName">Name</label>
+            <input type="text" onChange={handleName} value={userName} />
 
             <label htmlFor="email">Email</label>
             <input type="text" onChange={handleEmail} value={email} />
