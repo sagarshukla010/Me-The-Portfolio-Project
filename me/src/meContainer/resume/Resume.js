@@ -41,27 +41,17 @@ export default function Resume(props) {
   };
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
-      {data.resume.resumeDetails.educationDetails.map((eduD) => (
-        <ResumeHeading
-          heading={eduD.heading}
-          subHeading={eduD.subHeading}
-          fromDate={eduD.fromDate}
-          toDate={eduD.toDate}
-        />
-      ))}
-    </div>,
-  //    <div className="resume-screen-container" key="research">
-  //    {data.resume.resumeDetails.researchDetails.map((resD) => (
-  //      <ResumeHeading
-  //        heading={resD.heading}
-  //       //  subHeading={resD.subHeading}
-  //        fromDate={resD.fromDate}
-  //        toDate={resD.toDate}
-  //       //  description = {resD.descriptions[0]}
-  //      />
-  //    ))}
-  //  </div>,
+    //    <div className="resume-screen-container" key="research">
+    //    {data.resume.resumeDetails.researchDetails.map((resD) => (
+    //      <ResumeHeading
+    //        heading={resD.heading}
+    //       //  subHeading={resD.subHeading}
+    //        fromDate={resD.fromDate}
+    //        toDate={resD.toDate}
+    //       //  description = {resD.descriptions[0]}
+    //      />
+    //    ))}
+    //  </div>,
     <div className="resume-screen-container" key="work-history">
       {data.resume.resumeDetails.workHistory.map((wH) => (
         <>
@@ -82,17 +72,17 @@ export default function Resume(props) {
         </>
       ))}
     </div>,
-     <div className="resume-screen-container" key="internships">
-     {data.resume.resumeDetails.internships.map((intern) => (
-       <>
-         <ResumeHeading
-           heading={intern.heading}
-           subHeading={intern.subHeading}
-           description={intern.descriptions[0]}
-           fromDate={intern.fromDate}
-           toDate={intern.toDate}
-         />
-         {/* <div className="experience-description">
+    <div className="resume-screen-container" key="internships">
+      {data.resume.resumeDetails.internships.map((intern) => (
+        <>
+          <ResumeHeading
+            heading={intern.heading}
+            subHeading={intern.subHeading}
+            description={intern.descriptions[0]}
+            fromDate={intern.fromDate}
+            toDate={intern.toDate}
+          />
+          {/* <div className="experience-description">
            {intern.descriptions.map((internD) => (
              <>
                <span className="resume-description-text">{internD}</span>
@@ -100,9 +90,31 @@ export default function Resume(props) {
              </>
            ))}
          </div> */}
-       </>
-     ))}
-   </div>,
+        </>
+      ))}
+    </div>,
+    <div className="resume-screen-container" key="education">
+      {data.resume.resumeDetails.educationDetails.map((eduD) => (
+        <ResumeHeading
+          heading={eduD.heading}
+          subHeading={eduD.subHeading}
+          fromDate={eduD.fromDate}
+          toDate={eduD.toDate}
+        />
+      ))}
+    </div>,
+    <div className="resume-screen-container" key="projects">
+      {data.resume.resumeDetails.projectDetails.map((projectDetails, index) => (
+        <ResumeHeading
+          key={index}
+          heading={projectDetails.title}
+          subHeading={projectDetails.subHeading}
+          description={projectDetails.description}
+          fromDate={projectDetails.duration.fromDate}
+          toDate={projectDetails.duration.toDate}
+        />
+      ))}
+    </div>,
     <div className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
@@ -122,18 +134,6 @@ export default function Resume(props) {
           );
         }
       )}
-    </div>,
-    <div className="resume-screen-container" key="projects">
-      {data.resume.resumeDetails.projectDetails.map((projectDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectDetails.title}
-          subHeading={projectDetails.subHeading}
-          description={projectDetails.description}
-          fromDate={projectDetails.duration.fromDate}
-          toDate={projectDetails.duration.toDate}
-        />
-      ))}
     </div>
   ];
 
@@ -171,7 +171,7 @@ export default function Resume(props) {
         className="resume-details-carousal"
         style={carousalOffSetStyle.style}
       >
-        {resumeDetails.map(e => e)}
+        {resumeDetails.map((e) => e)}
       </div>
     );
   };

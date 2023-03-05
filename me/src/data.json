@@ -2,10 +2,6 @@
     "resume": {
         "resumeBullets": [
             {
-                "label": "Education",
-                "logoSrc": "education.svg"
-            },
-            {
                 "label": " Work_History",
                 "logoSrc": "work-history.svg"
             },
@@ -14,12 +10,16 @@
                 "logoSrc": "work-history.svg"
             },
             {
-                "label": "Programming_Skills",
-                "logoSrc": "programming-skills.svg"
+                "label": "Education",
+                "logoSrc": "education.svg"
             },
             {
                 "label": "Projects",
                 "logoSrc": "projects.svg"
+            },
+            {
+                "label": "Programming_Skills",
+                "logoSrc": "programming-skills.svg"
             }
         ],
         "resumeDetails": {
@@ -155,7 +155,7 @@
                     "fromDate": "1st",
                     "toDate": "28th, July 2019",
                     "descriptions": [
-                        "Implementation and usage of AL, ML, VR/AR, Computer Vision in the missile Integration and guidance system.."
+                        "Implementation and usage of AL, ML, VR/AR, Computer Vision in Missile Integration, Missile Guidance System, DOC Seeker, Missile Control System and Missile Engines( RAM JET AND SCRAM JET)."
                     ]
                 },
                 {
