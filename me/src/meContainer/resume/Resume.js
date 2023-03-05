@@ -51,6 +51,17 @@ export default function Resume(props) {
         />
       ))}
     </div>,
+  //    <div className="resume-screen-container" key="research">
+  //    {data.resume.resumeDetails.researchDetails.map((resD) => (
+  //      <ResumeHeading
+  //        heading={resD.heading}
+  //       //  subHeading={resD.subHeading}
+  //        fromDate={resD.fromDate}
+  //        toDate={resD.toDate}
+  //       //  description = {resD.descriptions[0]}
+  //      />
+  //    ))}
+  //  </div>,
     <div className="resume-screen-container" key="work-history">
       {data.resume.resumeDetails.workHistory.map((wH) => (
         <>
@@ -123,19 +134,7 @@ export default function Resume(props) {
           toDate={projectDetails.duration.toDate}
         />
       ))}
-    </div>,
-    <div className="resume-screen-container" key="projects">
-      {data.resume.resumeDetails.projectDetails.map((projectDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectDetails.title}
-          subHeading={projectDetails.subHeading}
-          description={projectDetails.description}
-          fromDate={projectDetails.duration.fromDate}
-          toDate={projectDetails.duration.toDate}
-        />
-      ))}
-    </div>,
+    </div>
   ];
 
   const handleCarousal = (index) => {
