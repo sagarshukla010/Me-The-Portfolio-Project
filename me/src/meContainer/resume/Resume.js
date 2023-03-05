@@ -121,15 +121,14 @@ export default function Resume(props) {
   const handleCarousal = (index) => {
     let offSetHeight = 360;
     let newCarousalOffSet = {
-      style: { transform: "translateY(" + index + offSetHeight * -1 + "px)" },
+      style: { transform: "translateY(" + index * offSetHeight * -1 + "px)" },
     };
     setCarousalOffSetStyle(newCarousalOffSet);
     setSelectedBulletIndex(index);
   };
 
   const getBullets = () => {
-    let resumeBullets = data.resume.resumeBullets;
-    return resumeBullets.map((bullet, index) => (
+    return data.resume.resumeBullets.map((bullet, index) => (
       <div
         onClick={() => handleCarousal(index)}
         className={
@@ -153,7 +152,7 @@ export default function Resume(props) {
         className="resume-details-carousal"
         style={carousalOffSetStyle.style}
       >
-        {resumeDetails[selectedBulletIndex]}
+        {resumeDetails.map(e => e)}
       </div>
     );
   };
