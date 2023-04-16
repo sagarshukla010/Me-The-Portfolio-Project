@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 const contactRouter = require('./route/contactRoute');
-app.use('/', contactRouter);
+app.use('https://me-the-portfolio-project.onrender.com', contactRouter);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
