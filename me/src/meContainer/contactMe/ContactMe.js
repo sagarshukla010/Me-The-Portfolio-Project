@@ -47,10 +47,12 @@ export default function ContactMe(props) {
       setBool(true);
       const res = await axios.post(`/contact`, data);
       if (userName.length === 0 || email.length === 0 || message.length === 0) {
+        console.log("The response from backend: ", res);
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
       } else if (res.status === 200) {
+        console.log("The response from backend: ", res);
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
@@ -59,7 +61,7 @@ export default function ContactMe(props) {
         setMessage("");
       }
     } catch (error) {
-      console.log(error);
+      console.log("error occured: ", error);
     }
   };
 
