@@ -45,7 +45,7 @@ export default function ContactMe(props) {
         message,
       };
       setBool(true);
-      const res = await axios.post(`/contact`, data);
+      const res = await axios.post(`https://me-the-portfolio-project-backend.onrender.com/contact`, data);
       if (userName.length === 0 || email.length === 0 || message.length === 0) {
         console.log("The response from backend: ", res);
         setBanner(res.data.msg);
