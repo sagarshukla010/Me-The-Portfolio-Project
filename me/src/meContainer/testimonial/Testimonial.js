@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Testimonial.css";
-import data from "../../data.json";
+import axios from "axios";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -14,12 +14,43 @@ import padmaImage from "../../assets/Testimonial/padmaImage.jpeg";
 import mugunthanImage from "../../assets/Testimonial/MugunthanPic.jpeg";
 
 export default function Testimonial(props) {
+
+  const [testimonial, setTestimonial] = useState(null);
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   // const fadeInSubscription =
   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.post(
+          "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
+          {
+            params: {
+              userId: "admin",
+              db: "testimonial",
+            },
+          }
+        )
+        console.log("response for testimonials: ", response);
+        let responseObj;
+        if(response?.status === 200){
+          responseObj = response?.data?.response;
+        }else{
+          responseObj = {};
+        }
+        setTestimonial(responseObj);
+      } catch (error) {
+        console.error("error: ",error)
+      }
+    };
+
+    fetchData();
+  }, []);
 
   let imgAry = [GauravImage, mugunthanImage, padmaImage];
 
@@ -59,7 +90,7 @@ export default function Testimonial(props) {
               id="testimonial-carousel"
               {...options}
             >
-              {data.testimonial.peopleDetails.map((pD) => (
+              {testimonial?.peopleDetails?.map((pD) => (
                 <div className="col-lg-12">
                   <div className="testi-item">
                     <div className="testi-comment">
