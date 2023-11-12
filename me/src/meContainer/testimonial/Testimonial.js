@@ -82,7 +82,7 @@ export default function Testimonial(props) {
         title={"Recommendation"}
         subHeading={"What my collagues and friends say about me"}
       />
-      <section className="testimonial-section" id={props.id || ""}>
+      <section className="testimonial-section" id={props?.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel
@@ -96,7 +96,7 @@ export default function Testimonial(props) {
                     <div className="testi-comment">
                       <p>
                         <i className="fa fa-quote-left" />
-                        {pD.recommendationGiven}
+                        {pD?.recommendationGiven}
                         <i className="fa fa-quote-right" />
                       </p>
                       <ul className="stars list-unstyled">
@@ -119,11 +119,11 @@ export default function Testimonial(props) {
                     </div>
                     <div className="client-info">
                       <img
-                        src={imgAry[pD.serialNumber]}
+                        src={imgAry[pD?.serialNumber]}
                         alt="no internet connection"
                       />
-                      <h5>{pD.name}</h5>
-                      <p>{pD.designation}</p>
+                      <h5>{pD?.name}</h5>
+                      <p>{pD?.designation}</p>
                     </div>
                   </div>
                 </div>
