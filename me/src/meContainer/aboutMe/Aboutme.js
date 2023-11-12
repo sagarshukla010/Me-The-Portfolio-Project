@@ -1,28 +1,59 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Aboutme.css";
-import data from "../../data.json";
 
 export default function Aboutme(props) {
+
+  const [aboutMe, setAboutMe] = useState(null);
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-  let aboutMe = data.aboutMe;
+  // const fadeInSubscription =
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.post(
+          "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
+          {
+            params: {
+              userId: "admin",
+              db: "aboutMe",
+            },
+          }
+        )
+        console.log("response for aboutMe: ", response);
+        let responseObj;
+        if(response?.status === 200){
+          responseObj = response?.data?.response;
+        }else{
+          responseObj = {};
+        }
+        setAboutMe(responseObj);
+      } catch (error) {
+        console.error("error: ",error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const SCREEN_CONSTANTS = {
-    description: aboutMe.description,
+    description: aboutMe?.description,
     highlights: {
-      bullets: aboutMe.highlights.bullets,
-      heading: aboutMe.highlights.heading,
+      bullets: aboutMe?.highlights?.bullets,
+      heading: aboutMe?.highlights?.heading,
     },
   };
 
   const renderHighlight = () => {
-    return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => {
+    return SCREEN_CONSTANTS?.highlights?.bullets?.map((value, i) => {
       return (
         <div className="highlight" key={i}>
           <div className="highlight-blob"></div>
