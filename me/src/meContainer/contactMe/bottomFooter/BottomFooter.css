@@ -1,0 +1,62 @@
+/* Footer section */
+.footer-container_bottom {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribute items along the main axis with space around them */
+  /* align-items: center;  */
+  gap: 50px;
+  /* Center items along the cross-axis */
+  padding-bottom: 10px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  gap: 200px; /* Spacing between child elements */
+}
+
+.box-container .box{
+   padding: 0px ;
+}
+
+.box .contact-details .social-media {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row; /* Fix display for social icons */
+  gap: 10px; /* Spacing between social icons */
+}
+
+.social-media .colz .colz-icon i {
+  color: white;
+  padding: 18px;
+  padding-left: 0px;
+  font-size: 24px;
+}
+
+.social-media .colz .colz-icon i:hover {
+  transform: scale(1.5);
+}
+
+.transparent-line {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.transparent-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px; /* Adjust the thickness of the line */
+  background-color: rgba(175, 131, 131, 0.971); /* Adjust the transparency (0.2 is 20% transparent black) */
+}
