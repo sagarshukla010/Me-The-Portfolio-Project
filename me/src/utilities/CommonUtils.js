@@ -2,7 +2,7 @@ import Home from "../meContainer/home/Home";
 import Aboutme from "../meContainer/aboutMe/Aboutme";
 import Resume from "../meContainer/resume/Resume";
 import Testimonial from "../meContainer/testimonial/Testimonial";
-import ContactMe from "../meContainer/contactMe/ContactMe";
+import Contact from "../meContainer/contactMe/Contact";
 
 export const TOTAL_SCREEN = [
   {
@@ -23,7 +23,7 @@ export const TOTAL_SCREEN = [
   },
   {
     screen_name: "ContactMe",
-    component: ContactMe,
+    component: Contact,
   },
 ];
 

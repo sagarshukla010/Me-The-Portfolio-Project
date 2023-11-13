@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./ContactMe.css";
 import Typical from "react-typical";
-import imgBack from "../../images/mailz.jpeg";
-import load1 from "../../images/load2.gif";
-import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
+import imgBack from "../../../images/mailz.jpeg"
+import load1 from "../../../images/load2.gif"
+import ScreenHeading from "../../../utilities/screenHeading/ScreenHeading";
+import ScrollService from "../../../utilities/ScrollService";
+import Animations from "../../../utilities/Animations";
 
 import axios from "axios";
 import { toast } from "react-toastify";
