@@ -19,10 +19,13 @@
 .back-form {
   max-width: 380px;
   margin: 0 auto;
+  /* gap: 200px */
 }
+
 .back-form .img-back {
   width: 100%;
   margin-bottom: 20px;
+  padding: 0 190px 0 0;
 }
 .img-back h4 {
   color: white;
@@ -33,7 +36,8 @@
 }
 .back-form .img-back img {
   width: 100%;
-  opacity: 0.5;
+  opacity: 1.0;
+  padding: 20px
 }
 .central-form form {
   width: auto;
@@ -42,13 +46,17 @@
   padding: 15px;
   justify-content: center;
   flex-direction: column;
-  margin-top: -52px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  margin-left: 0px;
   background-color: white;
   border-radius: 12px;
 }
+
 form p {
+  width: 400px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: var(--dark-orange);
   letter-spacing: 0.4rem;
   font-family: "Poppins Bold";
