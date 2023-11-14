@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+import React from "react";
+// import axios from "axios";
 import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Aboutme.css";
+import userData from "../../data.json"
 
 export default function Aboutme(props) {
 
-  const [aboutMe, setAboutMe] = useState(null);
+  // const [aboutMe, setAboutMe] = useState(null);
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -16,34 +18,39 @@ export default function Aboutme(props) {
   // const fadeInSubscription =
   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.post(
-          "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
-          {
-            params: {
-              userId: "admin",
-              db: "aboutMe",
-            },
-          }
-        )
-        console.log("response for aboutMe: ", response);
-        let responseObj;
-        if(response?.status === 200){
-          responseObj = response?.data?.response;
-        }else{
-          responseObj = {};
-        }
-        setAboutMe(responseObj);
-      } catch (error) {
-        console.error("error: ",error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.post(
+  //         "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
+  //         {
+  //           params: {
+  //             userId: "admin",
+  //             db: "aboutMe",
+  //           },
+  //         }
+  //       )
+  //       console.log("response for aboutMe: ", response);
+  //       let responseObj;
+  //       if(response?.status === 200){
+  //         responseObj = response?.data?.response;
+  //       }else{
+  //         responseObj = {};
+  //       }
+  //       setAboutMe(responseObj);
+  //     } catch (error) {
+  //       console.error("error: ",error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
+  let aboutMe = {};
+  if(userData){
+    aboutMe = userData?.aboutMe;
+  }
+  
   const SCREEN_CONSTANTS = {
     description: aboutMe?.description,
     highlights: {
