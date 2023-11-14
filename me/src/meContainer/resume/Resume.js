@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import data from "../../data.json";
 
 export default function Resume(props) {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffSetStyle, setCarousalOffSetStyle] = useState({});
-  const [resumeDetailEffect, setResumeDetails] = useState(null);
-  const [resumeBulletEffect, setResumeBullets] = useState(null);
+  // const [resumeDetailEffect, setResumeDetails] = useState(null);
+  // const [resumeBulletEffect, setResumeBullets] = useState(null);
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -42,54 +43,54 @@ export default function Resume(props) {
     );
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const resumeDetailsRes = await axios.post(
-          "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
-          {
-            params: {
-              userId: "admin",
-              db: "resumeDetails",
-            },
-          }
-        )
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const resumeDetailsRes = await axios.post(
+  //         "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
+  //         {
+  //           params: {
+  //             userId: "admin",
+  //             db: "resumeDetails",
+  //           },
+  //         }
+  //       )
 
-        const resumebulletRes = await axios.post(
-          "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
-          {
-            params: {
-              userId: "admin",
-              db: "resumebullets",
-            },
-          }
-        )
+  //       const resumebulletRes = await axios.post(
+  //         "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
+  //         {
+  //           params: {
+  //             userId: "admin",
+  //             db: "resumebullets",
+  //           },
+  //         }
+  //       )
 
-        console.log("response for resumeDetails: ", resumeDetailsRes);
-        console.log("response for resumebullets: ", resumebulletRes);
-        let detailsResObj;
-        let bulletResObj;
-        if(resumeDetailsRes?.status === 200){
-          detailsResObj = resumeDetailsRes?.data?.response;
-        }else{
-          detailsResObj = {}
-        }
+  //       console.log("response for resumeDetails: ", resumeDetailsRes);
+  //       console.log("response for resumebullets: ", resumebulletRes);
+  //       let detailsResObj;
+  //       let bulletResObj;
+  //       if(resumeDetailsRes?.status === 200){
+  //         detailsResObj = resumeDetailsRes?.data?.response;
+  //       }else{
+  //         detailsResObj = {}
+  //       }
 
-        if(resumebulletRes?.status === 200){
-          bulletResObj = resumebulletRes?.data?.response;
-        }else{
-          bulletResObj = {};
-        }
+  //       if(resumebulletRes?.status === 200){
+  //         bulletResObj = resumebulletRes?.data?.response;
+  //       }else{
+  //         bulletResObj = {};
+  //       }
 
-        setResumeBullets(bulletResObj);
-        setResumeDetails(detailsResObj);
-      } catch (error) {
-        console.error("error: ",error)
-      }
-    };
+  //       setResumeBullets(bulletResObj);
+  //       setResumeDetails(detailsResObj);
+  //     } catch (error) {
+  //       console.error("error: ",error)
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   const resumeDetails = [
     //    <div className="resume-screen-container" key="research">
@@ -104,7 +105,7 @@ export default function Resume(props) {
     //    ))}
     //  </div>,
     <div className="resume-screen-container" key="work-history">
-      {resumeDetailEffect?.workHistory?.map((wH) => (
+      {data?.resume?.resumeDetails?.workHistory?.map((wH) => (
         <>
           <ResumeHeading
             heading={wH.heading}
@@ -124,7 +125,7 @@ export default function Resume(props) {
       ))}
     </div>,
     <div className="resume-screen-container" key="internships">
-      {resumeDetailEffect?.internships?.map((intern) => (
+      {data?.resume?.resumeDetails?.internships?.map((intern) => (
         <>
           <ResumeHeading
             heading={intern.heading}
@@ -145,7 +146,7 @@ export default function Resume(props) {
       ))}
     </div>,
     <div className="resume-screen-container" key="education">
-      {resumeDetailEffect?.educationDetails?.map((eduD) => (
+      {data?.resume?.resumeDetails?.educationDetails?.map((eduD) => (
         <ResumeHeading
           heading={eduD.heading}
           subHeading={eduD.subHeading}
@@ -155,7 +156,7 @@ export default function Resume(props) {
       ))}
     </div>,
     <div className="resume-screen-container" key="projects">
-      {resumeDetailEffect?.projectDetails?.map((projectDetails, index) => (
+      {data?.resume?.resumeDetails?.projectDetails?.map((projectDetails, index) => (
         <ResumeHeading
           key={index}
           heading={projectDetails.title}
@@ -169,7 +170,7 @@ export default function Resume(props) {
     <div className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
-      {resumeDetailEffect?.programmingSkillsDetails?.map(
+      {data?.resume?.resumeDetails?.programmingSkillsDetails?.map(
         (skill, index) => {
           return (
             <div className="skill-parent" key={index}>
@@ -198,7 +199,7 @@ export default function Resume(props) {
   };
 
   const getBullets = () => {
-    return resumeBulletEffect?.bullets?.map((bullet, index) => (
+    return data?.resume?.resumeBullets?.map((bullet, index) => (
       <div
         onClick={() => handleCarousal(index)}
         className={
