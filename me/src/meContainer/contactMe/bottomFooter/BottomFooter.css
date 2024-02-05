@@ -60,3 +60,33 @@
   height: 1px; /* Adjust the thickness of the line */
   background-color: rgba(175, 131, 131, 0.971); /* Adjust the transparency (0.2 is 20% transparent black) */
 }
+
+
+@media only screen and (max-width: 932px) {
+  .footer-container_bottom {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .box-container {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    gap: 20px; /* Adjust spacing between child elements for smaller screens */
+  }
+
+  .box-container .box {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .social-icons {
+    flex-direction: column; /* Stack social icons vertically for smaller screens */
+    gap: 10px; /* Adjust spacing between social icons for smaller screens */
+  }
+  
+  .social-media .colz .colz-icon i {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .transparent-line::before {
+    height: 2px; /* Adjust the thickness of the line for smaller screens */
+  }
+}
