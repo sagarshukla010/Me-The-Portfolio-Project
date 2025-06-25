@@ -1,82 +1,62 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TOTAL_SCREEN, GET_SCREEN_INDEX } from "../../../utilities/CommonUtils";
 import ScrollService from "../../../utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
-// import index from "react-typical";
 
 export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
-  const [showHeaderOptions, setShowHeaderOptions] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  const updateCurrentScreen = (currentScreen) => {
-    if (currentScreen || !currentScreen.screenInView) return;
-    let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
-    if (screenIndex < 0) return;
-  };
-  let currentScreenSubscription =
-    ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
-
-  const getHeaderOptions = () => {
-    return TOTAL_SCREEN.map((screen, i) => {
-      return (
-        <div
-          key={screen.screen_name}
-          className={getHeaderOptionsClass(i)}
-          onClick={() => switchScreen(i, screen)}
-        >
-          <span>{screen.screen_name}</span>
-        </div>
-      );
+  useEffect(() => {
+    const subscription = ScrollService.currentScreenBroadCaster.subscribe((currentScreen) => {
+      if (!currentScreen || !currentScreen.screenInView) return;
+      const index = GET_SCREEN_INDEX(currentScreen.screenInView);
+      if (index >= 0) setSelectedScreen(index);
     });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleSwitchScreen = (index, screen) => {
+    const target = document.getElementById(screen.screen_name);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      setSelectedScreen(index);
+      setShowMenu(false);
+    }
   };
 
-  const getHeaderOptionsClass = (index) => {
-    let classes = "header-option";
-    if (index < TOTAL_SCREEN.length - 1) classes += " header-option-separator";
-
-    if (selectedScreen === index) classes += " selected-header-option";
-
-    return classes;
-  };
-
-  const switchScreen = (index, screen) => {
-    let screenComponent = document.getElementById(screen.screen_name);
-    if (!screenComponent) return;
-
-    screenComponent.scrollIntoView({ behavior: "smooth" });
-    setSelectedScreen(index);
-    setShowHeaderOptions(false);
-  };
+  const renderHeaderOptions = () =>
+    TOTAL_SCREEN.map((screen, index) => (
+      <div
+        key={screen.screen_name}
+        className={`header-option${index < TOTAL_SCREEN.length - 1 ? " header-option-separator" : ""}${
+          selectedScreen === index ? " selected-header-option" : ""
+        }`}
+        onClick={() => handleSwitchScreen(index, screen)}
+      >
+        {screen.screen_name}
+      </div>
+    ));
 
   return (
-    <div>
-      <div
-        className="header-container"
-        onClick={() => setShowHeaderOptions(!showHeaderOptions)}
-      >
-        <div className="header-parent">
-          <div
-            className="header-hamburger"
-            onClick={() => setShowHeaderOptions(!showHeaderOptions)}
-          >
-            <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
-          </div>
-          <div className="header-logo">
-            <span>SAGAR~</span>
-          </div>
-          <div
-            className={
-              showHeaderOptions
-                ? "header-options show-hamburger-options"
-                : "header-options"
-            }
-          >
-            {getHeaderOptions()}
-          </div>
+    <header className="header-container">
+      <div className="header-parent">
+        <div className="header-logo">SAGAR~</div>
+
+        <div
+          className="header-hamburger"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <FontAwesomeIcon icon={faBars} className="header-hamburger-bars" />
         </div>
+
+        <nav className={`header-options ${showMenu ? "show-menu" : ""}`}>
+          {renderHeaderOptions()}
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }
