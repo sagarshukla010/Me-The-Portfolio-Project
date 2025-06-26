@@ -25,6 +25,12 @@
         "resumeDetails": {
             "educationDetails": [
                 {
+                    "heading": "BITS(BIRLA Institute of Technology and Sciences) Pilani",
+                    "subHeading": "Master of Technology(M.Tech) in AI & ML",
+                    "fromDate": "2023",
+                    "toDate": "2025"
+                },
+                {
                     "heading": "Gyan Ganga Institute of Technology and Sciences",
                     "subHeading": "Bachelors of Engineering in Electronics and Communication, CGPA: 8.46",
                     "fromDate": "2015",
@@ -111,6 +117,15 @@
                 }
             ],
             "workHistory": [
+                {
+                    "heading": "TATA Consultancy Services - Full Time",
+                    "subHeading": "IT Analyst",
+                    "fromDate": "Nov-2024",
+                    "toDate": "Present",
+                    "descriptions": [
+                        ""
+                    ]
+                },
                 {
                     "heading": "Tech Mahindra Limited - Full Time",
                     "subHeading": "Sr. Software Engineer",
@@ -208,7 +223,7 @@
         }
     },
     "aboutMe": {
-        "description": "Greetings, I would like to introduce myself by first mentioning that I am a passionate software developer with a flavor of interest in the field of research in computer science domain, I am experienced in software development with the primary language as NodeJS and JavaScript in the jio platforms limited, although for competitive programming purpose I prefer java as my first language, moreover in my development experience I have learned to use many dev tools like Kubernetes, Kibana, postman, Kafka, sequelize and many more, in addition to that my data structures and algorithms skills had helped me to optimize my created APIs to a new level, I always try to learn and explore new things in search of various opportunities in the field of software development.",
+        "description": "Greetings, I am a passionate Full Stack Developer with a keen interest in research and innovation within the field of computer science. I currently work at Tata Consultancy Services (TCS), where I contribute to end-to-end software development solutions across various domains. In addition to my core development expertise, I have developed a growing proficiency in Generative AI, Artificial Intelligence (AI), and Machine Learning (ML). My primary tech stack includes Node.js and JavaScript, while for competitive programming, I prefer Java for its performance and reliability. Over the course of my career, I’ve worked with a diverse set of tools and platforms including Kubernetes, Kibana, Postman, Kafka, and Sequelize, enabling me to build scalable, efficient, and robust applications. A strong foundation in data structures and algorithms has helped me significantly optimize backend APIs and improve system performance. I am continuously driven by a curiosity to learn and explore emerging technologies, always seeking new challenges and opportunities to grow in the field of software engineering and AI..",
         "highlights": {
             "bullets": [
                 "Full Stack Web and Mobile Development",
