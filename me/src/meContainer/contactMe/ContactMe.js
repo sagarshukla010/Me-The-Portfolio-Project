@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ContactMe.css";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import imgBack from "../../images/mailz.jpeg";
 import load1 from "../../images/load2.gif";
 import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
@@ -77,7 +77,7 @@ export default function ContactMe(props) {
           <div className="col">
             <h2>
               {" "}
-              <Typical loop={Infinity} steps={["Get In Touch ☎️", 2000]} />
+              {/* <Typical loop={Infinity} steps={["Get In Touch ☎️", 2000]} /> */}
             </h2>
             <a href="https://github.com/sagarshukla010">
               <i className="fa fa-github"></i>
