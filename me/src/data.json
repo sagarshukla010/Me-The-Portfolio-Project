@@ -280,5 +280,38 @@
                 "serialNumber": 2
             }
         ]
-    }
+    },
+    "researchList":{
+        "researchDetails": [
+            {
+                "title": "Study of Depression Detection using Deep Learning",
+                "description": "Deep learning is becoming an important method of machine learning and has proven to provide its strength in data sciences and artificial intelligence. It works with unstructured and unlabeled data. Deep learning is more accurate than conventional classifier-based machine learning. The reason for high accuracy is managing by a count of hidden layers, application of activation functions, weighted activation functions, etc. In this work, a new weighted activation function is being proposed to get high accuracy for deep learning. The weighted activation function is going to be applied and tested on a depression dataset to evaluate the intensity of depression.",
+                "tags": ["Machine Learning", "Deep Learning", "Activation Functions", "Artificial Intelligence"],
+                "link": "https://ieeexplore.ieee.org/document/9427624/keywords#keywords"
+              },
+              {
+                "title": "Application of Machine Learning in Intrusion detection using a feedback System: Study",
+                "description": "With the growth and expansion of network technologies, every corner of the world is now connected and people are using the Internet to a great extent. As an eternal truth, every growth brings many challenges along with it. Some challenges over the Internet are security, availability, speed, congestion, etc. Among all major threats, security is most important and must be dealt with a lot of attention and accuracy. Security measures applied must work on time (real-time) and must not cause a lot of delays in the processing of data. For security over the Internet, Intrusion Detection techniques are being used prominently. Intrusion Detection Systems (IDS) process every incoming and outgoing data packet from the system whether a particular machine or a network. Hence it requires working with huge of data that not only contains the information linked to security threats but can also learn from them and apply it for all future traffic. This work provides an IDS with machine learning to process large data of IP packets.",
+                "tags": ["Classification", "Artificial Intelligence", "Security", "Machine Learning", "Authorization", "Machine Learning Classifier Techniques"],
+                "link": "https://ieeexplore.ieee.org/document/9725764/keywords#keywords"
+              },{
+                "title": "Use of SLAM Technology to Enhance Performance & Accuracy of Bots",
+                "description": "Bot technology is proving to be a boon in the current era when Internet has become a necessity for the world. With the advantage that it collects remote data with authentication and authorization using the various automation features, it has added not only to collect data but also to provide it to the desiring users with lot of ease. As now a days the data usage and storage is increasing continuously there is a need for a more accurate and appropriate method which can provide customized and relevant data with respect to the specific need, current algorithms used by search engines google, yahoo and Bing is providing the data in an un-customized manner and it is also very time consuming , due to which the user get lost in the huge data and has to deal with time latency as well. To overcome this, we have proposed a general solution in this paper which can provide better filtering of data specific to the information needed, reduce time latency by using various technologies and algorithms with better accuracy.",
+                "tags": ["Artificial Intelligence", "Machine Learning", "Authorization", "Role-Based Access Control", "Decision Tree Algorithm", "Security", "Classification"],
+                "link": "https://ieeexplore.ieee.org/document/9362944/keywords#keywords"
+              },
+              {
+                "title": "Study of Bot Technology to Provide High Performance and Accuracy using Slam Technology",
+                "description": "As the resources over the internet are increasing day by day in terms of both hardware and software, information stored over them is also increasing exponentially. Related information stored over the Internet is not only increasing but it is widespread around the world on different resources. Search engines e.g. Google, Bing, Yahoo etc. are listing this information to the users based on their own designed algorithms which require ways to associate information providers to these search engines services. This mechanism has two major drawbacks, first, it bounds to the information providers to provide permissions forcefully to the search engine service provider and second is they are generalized and users get lost in huge information retrieved by the search services. Along with this, the information retrieval is time-consuming as well. This work is focusing to provide high performance, high accuracy, customization-based search tool which leverages the advantages of multiple technologies.",
+                "tags": ["Machine Learning", "Artificial Intelligence", "Security" , "Authorization" , "Role-Based Access Control", "Classification", "Decision Tree Algorithm"],
+                "link": "https://ieeexplore.ieee.org/document/9243541/keywords#keywords"
+              },
+              {
+                "title": "Natural Language Processing Technique for Generation of SQL Queries Dynamically",
+                "description": "Natural Language Processing is being used in every field of human to machine interaction. Database queries although have a confined set of instructions, but still found to be complex and dedicated human resources are required to write, test, optimize and execute structured query language statements. This makes it difficult, time-consuming and many a time inaccurate too. Such difficulties can be overcome if the queries are formed dynamically with standard procedures. In this work, parsing, lexical analysis, synonym detection and formation processes of the natural language processing are being proposed to be used for dynamically generating SQL queries and optimization of them for fast processing with high accuracy. NLP parsing of the user inputted text for retrieving, creation and insertion of data are being proposed to be created dynamically from English text inputs. This will help users of the system to generate reports from the data as per the requirement without the complexities of SQL. The proposed system will not only generate queries dynamically but will also provide high accuracy and performance.",
+                "tags": ["Natural Language Processing", "Parsing", "Lexical Analysis", "Structured Query Language", "English Text"],
+                "link": "https://ieeexplore.ieee.org/document/9418091/keywords#keywords"
+              }
+            ]
+        }
 }
