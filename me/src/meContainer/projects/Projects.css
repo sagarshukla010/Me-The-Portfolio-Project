@@ -1,0 +1,113 @@
+.project-section {
+  padding: 80px 20px;
+  background-color: var(--light-grey);
+}
+
+.project-heading {
+  font-size: 2.5rem;
+  color: var(--dark-orange);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-tabs,
+.nested-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-tab-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #1f2235;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-tab-button:hover {
+  background-color: #ff5823;
+  color: white;
+  border-color: #ff5823;
+}
+
+.project-active {
+  background-color: #ff5823;
+  color: white;
+  border-color: #ff5823;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  width: 320px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2235;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.project-tag {
+  background-color: #1f2235;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #1f2235;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #ff5823;
+  color: white;
+}
