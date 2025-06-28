@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import data from "../../data.json";
+import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,10 +11,10 @@ import "./Research.css";
 export default function Research() {
   return (
     <section className="research-section" id="research">
-      <div className="research-header">
-        <h2>Research & Publications</h2>
-        <p>Selected works and technical investigations</p>
-      </div>
+       <ScreenHeading
+        title="Research & Publications"
+        subHeading="Selected works and technical investigations"
+      />
 
       <Swiper
         modules={[Autoplay, Pagination]}

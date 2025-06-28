@@ -1,3 +1,7 @@
+.testimonial-parent {
+  padding: 120px 0 0px;
+}
+
 .testimonial-section {
   padding: 80px 0 80px;
   background-image: url("../../assets/Testimonial/bg-1.jpg");

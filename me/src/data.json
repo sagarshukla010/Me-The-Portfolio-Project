@@ -12,14 +12,6 @@
             {
                 "label": "Education",
                 "logoSrc": "education.svg"
-            },
-            {
-                "label": "Projects",
-                "logoSrc": "projects.svg"
-            },
-            {
-                "label": "Programming_Skills",
-                "logoSrc": "programming-skills.svg"
             }
         ],
         "resumeDetails": {
@@ -47,73 +39,6 @@
                     "subHeading": "Specialization in Physics, Chemistry, Maths and Computer Science, XII: 62%, X: 79.80%.",
                     "fromDate": "2013",
                     "toDate": "2015"
-                }
-            ],
-            "programmingSkillsDetails": [
-                {
-                    "skills": "JavaScript",
-                    "ratingPercentage": 85
-                },
-                {
-                    "skills": "React JS",
-                    "ratingPercentage": 85
-                },
-                {
-                    "skills": "React-Native",
-                    "ratingPercentage": 85
-                },
-                {
-                    "skills": "Express JS",
-                    "ratingPercentage": 89
-                },
-                {
-                    "skills": "NodeJS",
-                    "ratingPercentage": 89
-                },
-                {
-                    "skills": "Mongo DB",
-                    "ratingPercentage": 70
-                },
-                {
-                    "skills": "Core Java",
-                    "ratingPercentage": 80
-                },
-                {
-                    "skills": "HTML",
-                    "ratingPercentage": 80
-                },
-                {
-                    "skills": "CSS",
-                    "ratingPercentage": 80
-                }
-            ],
-            "projectDetails": [
-                {
-                    "title": "Personal Portfolio Website",
-                    "duration": {
-                        "fromDate": 2020,
-                        "toDate": 2021
-                    },
-                    "subHeading": "Technology Used: ReactJS, BootStrap",
-                    "description": "A personal portfolio website to showcase all my details and projects at one place."
-                },
-                {
-                    "title": "Home Food Mobile Application",
-                    "duration": {
-                        "fromDate": 2020,
-                        "toDate": 2021
-                    },
-                    "subHeading": "Technology Used: React-Native, Redux, BootStrap, Google-FireBase",
-                    "description": "This application makes users order their daily meal by searching their favorite restaurants near their location by tracking it with the map feature, also the application is secured with a Gmail authorization login screen, moreover, a user is also able to create their profile and all this data is stored and hosted by the google firebase."
-                },
-                {
-                    "title": "Weather Prediction Web-Application",
-                    "duration": {
-                        "fromDate": 2022,
-                        "toDate": 2022
-                    },
-                    "subHeading": "Technology Used: NodeJS, ExpressJS, HeroKu",
-                    "description": "The application helps to predict the accurate weather conditions and temperature"
                 }
             ],
             "workHistory": [
@@ -189,35 +114,45 @@
                     "fromDate": "Year",
                     "toDate": "2021",
                     "subHeading": "Authors: Sagar Shukla, Rajneesh Agrawal",
-                    "descriptions": ["Publisher IEEE: 2021 3rd International Conference on Advances in Computing, Communication Control and Networking (ICAC3N)"] 
+                    "descriptions": [
+                        "Publisher IEEE: 2021 3rd International Conference on Advances in Computing, Communication Control and Networking (ICAC3N)"
+                    ]
                 },
                 {
                     "heading": "Study of Depression Detection using Deep Learning",
                     "fromDate": "Year",
                     "toDate": "2021",
                     "subHeading": "Authors: Hrithik Sanyal, Sagar Shukla, Rajneesh Agrawal",
-                    "descriptions": ["Publisher IEEE: 2021 IEEE International Conference on Consumer Electronics (ICCE)"] 
+                    "descriptions": [
+                        "Publisher IEEE: 2021 IEEE International Conference on Consumer Electronics (ICCE)"
+                    ]
                 },
                 {
                     "heading": "Natural Language Processing Technique for Generation of SQL Queries Dynamically",
                     "fromDate": "Year",
                     "toDate": "2021",
                     "subHeading": "Authors: Hrithik Sanyal, Sagar Shukla, Rajneesh Agrawal",
-                    "descriptions": ["Publisher IEEE: 2021 6th International Conference for Convergence in Technology (I2CT)"] 
+                    "descriptions": [
+                        "Publisher IEEE: 2021 6th International Conference for Convergence in Technology (I2CT)"
+                    ]
                 },
                 {
                     "heading": "Use of SLAM Technology to Enhance Performance & Accuracy of Bots",
                     "fromDate": "Year",
                     "toDate": "2020",
                     "subHeading": "Authors: Hrithik Sanyal, Sagar Shukla, Rajneesh Agrawal",
-                    "descriptions": ["Publisher IEEE: 2020 2nd International Conference on Advances in Computing, Communication Control and Networking (ICACCCN)"] 
+                    "descriptions": [
+                        "Publisher IEEE: 2020 2nd International Conference on Advances in Computing, Communication Control and Networking (ICACCCN)"
+                    ]
                 },
                 {
                     "heading": "Study of Bot Technology to Provide High Performance and Accuracy using Slam Technology",
                     "fromDate": "Year",
                     "toDate": "2020",
                     "subHeading": "Authors: Sagar Shukla, Rajneesh Agrawal, Hrithik Sanyal",
-                    "descriptions": ["Publisher IEEE: 2020 Fourth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC)"] 
+                    "descriptions": [
+                        "Publisher IEEE: 2020 Fourth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC)"
+                    ]
                 }
             ]
         }
@@ -281,37 +216,325 @@
             }
         ]
     },
-    "researchList":{
+    "researchList": {
         "researchDetails": [
             {
                 "title": "Study of Depression Detection using Deep Learning",
                 "description": "Deep learning is becoming an important method of machine learning and has proven to provide its strength in data sciences and artificial intelligence. It works with unstructured and unlabeled data. Deep learning is more accurate than conventional classifier-based machine learning. The reason for high accuracy is managing by a count of hidden layers, application of activation functions, weighted activation functions, etc. In this work, a new weighted activation function is being proposed to get high accuracy for deep learning. The weighted activation function is going to be applied and tested on a depression dataset to evaluate the intensity of depression.",
-                "tags": ["Machine Learning", "Deep Learning", "Activation Functions", "Artificial Intelligence"],
+                "tags": [
+                    "Machine Learning",
+                    "Deep Learning",
+                    "Activation Functions",
+                    "Artificial Intelligence"
+                ],
                 "link": "https://ieeexplore.ieee.org/document/9427624/keywords#keywords"
-              },
-              {
+            },
+            {
                 "title": "Application of Machine Learning in Intrusion detection using a feedback System: Study",
                 "description": "With the growth and expansion of network technologies, every corner of the world is now connected and people are using the Internet to a great extent. As an eternal truth, every growth brings many challenges along with it. Some challenges over the Internet are security, availability, speed, congestion, etc. Among all major threats, security is most important and must be dealt with a lot of attention and accuracy. Security measures applied must work on time (real-time) and must not cause a lot of delays in the processing of data. For security over the Internet, Intrusion Detection techniques are being used prominently. Intrusion Detection Systems (IDS) process every incoming and outgoing data packet from the system whether a particular machine or a network. Hence it requires working with huge of data that not only contains the information linked to security threats but can also learn from them and apply it for all future traffic. This work provides an IDS with machine learning to process large data of IP packets.",
-                "tags": ["Classification", "Artificial Intelligence", "Security", "Machine Learning", "Authorization", "Machine Learning Classifier Techniques"],
+                "tags": [
+                    "Classification",
+                    "Artificial Intelligence",
+                    "Security",
+                    "Machine Learning",
+                    "Authorization",
+                    "Machine Learning Classifier Techniques"
+                ],
                 "link": "https://ieeexplore.ieee.org/document/9725764/keywords#keywords"
-              },{
+            },
+            {
                 "title": "Use of SLAM Technology to Enhance Performance & Accuracy of Bots",
                 "description": "Bot technology is proving to be a boon in the current era when Internet has become a necessity for the world. With the advantage that it collects remote data with authentication and authorization using the various automation features, it has added not only to collect data but also to provide it to the desiring users with lot of ease. As now a days the data usage and storage is increasing continuously there is a need for a more accurate and appropriate method which can provide customized and relevant data with respect to the specific need, current algorithms used by search engines google, yahoo and Bing is providing the data in an un-customized manner and it is also very time consuming , due to which the user get lost in the huge data and has to deal with time latency as well. To overcome this, we have proposed a general solution in this paper which can provide better filtering of data specific to the information needed, reduce time latency by using various technologies and algorithms with better accuracy.",
-                "tags": ["Artificial Intelligence", "Machine Learning", "Authorization", "Role-Based Access Control", "Decision Tree Algorithm", "Security", "Classification"],
+                "tags": [
+                    "Artificial Intelligence",
+                    "Machine Learning",
+                    "Authorization",
+                    "Role-Based Access Control",
+                    "Decision Tree Algorithm",
+                    "Security",
+                    "Classification"
+                ],
                 "link": "https://ieeexplore.ieee.org/document/9362944/keywords#keywords"
-              },
-              {
+            },
+            {
                 "title": "Study of Bot Technology to Provide High Performance and Accuracy using Slam Technology",
                 "description": "As the resources over the internet are increasing day by day in terms of both hardware and software, information stored over them is also increasing exponentially. Related information stored over the Internet is not only increasing but it is widespread around the world on different resources. Search engines e.g. Google, Bing, Yahoo etc. are listing this information to the users based on their own designed algorithms which require ways to associate information providers to these search engines services. This mechanism has two major drawbacks, first, it bounds to the information providers to provide permissions forcefully to the search engine service provider and second is they are generalized and users get lost in huge information retrieved by the search services. Along with this, the information retrieval is time-consuming as well. This work is focusing to provide high performance, high accuracy, customization-based search tool which leverages the advantages of multiple technologies.",
-                "tags": ["Machine Learning", "Artificial Intelligence", "Security" , "Authorization" , "Role-Based Access Control", "Classification", "Decision Tree Algorithm"],
+                "tags": [
+                    "Machine Learning",
+                    "Artificial Intelligence",
+                    "Security",
+                    "Authorization",
+                    "Role-Based Access Control",
+                    "Classification",
+                    "Decision Tree Algorithm"
+                ],
                 "link": "https://ieeexplore.ieee.org/document/9243541/keywords#keywords"
-              },
-              {
+            },
+            {
                 "title": "Natural Language Processing Technique for Generation of SQL Queries Dynamically",
                 "description": "Natural Language Processing is being used in every field of human to machine interaction. Database queries although have a confined set of instructions, but still found to be complex and dedicated human resources are required to write, test, optimize and execute structured query language statements. This makes it difficult, time-consuming and many a time inaccurate too. Such difficulties can be overcome if the queries are formed dynamically with standard procedures. In this work, parsing, lexical analysis, synonym detection and formation processes of the natural language processing are being proposed to be used for dynamically generating SQL queries and optimization of them for fast processing with high accuracy. NLP parsing of the user inputted text for retrieving, creation and insertion of data are being proposed to be created dynamically from English text inputs. This will help users of the system to generate reports from the data as per the requirement without the complexities of SQL. The proposed system will not only generate queries dynamically but will also provide high accuracy and performance.",
-                "tags": ["Natural Language Processing", "Parsing", "Lexical Analysis", "Structured Query Language", "English Text"],
+                "tags": [
+                    "Natural Language Processing",
+                    "Parsing",
+                    "Lexical Analysis",
+                    "Structured Query Language",
+                    "English Text"
+                ],
                 "link": "https://ieeexplore.ieee.org/document/9418091/keywords#keywords"
-              }
-            ]
+            }
+        ]
+    },
+    "projects": [
+        {
+            "title": "Canada Contract Management System(CCMS)",
+            "description": "The purpose of HCP contract management system canada is to sign contract with HCP's for providing services to lilly, the system collects data, generates the contract and helps BIO Admin team to keep of each contract.",
+            "tags": [
+                "Vue.js",
+                "python",
+                "PostgresQL"
+            ],
+            "category": "work",
+            "subcategory": "TATA Consultancy Services Limited",
+            "githubLink": ""
+        }, 
+        {
+            "title": "Lusa Coaching Notes Insights",
+            "description": "Build the backend on python with integrating it with Generative AI tool to generate the summary for the coaching Notes stored in the postgresQL Database.",
+            "tags": [
+                "Generative AI",
+                "python",
+                "AWS"
+            ],
+            "category": "work",
+            "subcategory": "TATA Consultancy Services Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Ziply Fiber Services - Web, D2D, Retail",
+            "description": "Developed backend systems using Node.js in a microservices architecture for multiple web applications under the Ziply Fiber account; created both GraphQL and REST APIs to handle complex business logic, with MongoDB as the data store. Optimized all APIs, significantly reducing response time, simplifying business logic, and improving logging and error-handling mechanisms. Followed Agile methodologies, managed tasks using Jira, and participated in regular CI/CD deployments via Jenkins and Docker containers.",
+            "tags": [
+                "Node.js",
+                "Jenkins CI/CD",
+                "GraphQL",
+                "MongoDB",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Tech Mahindra Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "DFS - Tango & Salsa",
+            "description": "Developed a web application to calculate tour leader commissions based on product category, customer nationality, and check-in/check-out time, with real-time commission display upon product billing. Built a web application to check scheduled flights and manage products for customs clearance. Designed the project structure and implemented backend logic; led daily stand-ups, resolved bugs, and ensured smooth build deployments.",
+            "tags": [
+                "Node.js",
+                "Jenkins CI/CD",
+                "Docker"
+            ],
+            "category": "work",
+            "subcategory": "Cognizant Technology Solutions",
+            "githubLink": ""
+        },
+        {
+            "title": "Supply chain management Dashboards - IT Team",
+            "description": "This will enable to take the transport execution data from different group companies and make the payments to the vendor including the 3PL warehouse & manpower vendors. Billing to be done by SCM Org(FCPL) to respective customers i.e. RIL, RRL, JIO. All the financial consolidation shall be done in the new landscape with required visibility.",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Webpage Dashboard: JWC Logistics Platform",
+            "description": "Jio has built a World Class Trade Center in Mumbai,India. This is to starts it’s operation early next year. The logistics operation for conducting an event is critical for the Trade Centre. The Logistic Operations team is looking for an integrated operation software application that automate and facilitate for a smooth operation of the event including the vehicle entries and exits to the venue for different/different kind of events. This application should help in interacting with the exhibitor and it’s 3PL operator in booking their time slot for their material delivery at Centre required for the exhibition.",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Webpage Dashboard: SCM(FCPL)-Consolidation-in-Separate-Server",
+            "description": "Reliance Group Level SCM consolidation under the current company FCPL (to be re-named). This will enable to take the transport execution data from different group companies and make the payments to the vendors including the 3PL, warehouse & manpower vendors. Billing to be done by SCM Org (FCPL) to respective customers i.e. RIL, RRL, JIO. All the financial consolidation shall be done in the new landscape with required visibility.",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Physical Inventory Scan through Mobile APP",
+            "description": "Reliance hydrocarbon business has finished goods (Petrochemicals & textiles) warehouses at locations across business geography. Currently these warehouses are being managed by third party vendors for their operations. There is always a need to check on physical inventory vs system inventory. For the same purpose there is a need of medium to compare between book stock and physical stock so as to find any discrepancies. The same can be fulfilled by an mobile based application using which periodic stock checks can be made. This application is of business and product agnostic.The Physical Inventory check which currently being done manually needs to be digitized and also scanning option is to be given in a mobile APP.",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Webpage Dashboard: SCM Platform BAU",
+            "description": "SCM platform (BAU) - All tracks deliverables.",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "Webpage Dashboard: People Management Platform",
+            "description": "",
+            "tags": [
+                "Node.js",
+                "Javascript",
+                "ORM(Sequelize)",
+                "MySQL",
+                "Kubernetes",
+                "Redis"
+            ],
+            "category": "work",
+            "subcategory": "Jio Platforms Limited",
+            "githubLink": ""
+        },
+        {
+            "title": "gesture control robotic Arm.",
+            "description": "The Concept is based on to create an interface between human and digital systems so as to take the human gestures as commands. The concept is basically aimed for the disabled and paralyzed people. Here we have one accelerometer in our hand which will recognize our hand gesture (by measuring the gravitational acceleration) which will get read by the microcontroller and transmitte that information with the help of RF Module to the system. Then the system will form its actions according to the information data which is received.",
+            "tags": [
+                "Arduino IDE (Integrated development Environment)",
+                "Embedded C"
+            ],
+            "category": "college",
+            "subcategory": "final-year",
+            "githubLink": "https://github.com/sagarshukla010/Gesture-Control-Robotic-Arm"
+        },
+        {
+            "title": "gesture control robotic Vehicle.",
+            "description": "The Concept is based on to create an interface between human and digital systems so as to take the human gestures as commands. The concept is basically aimed for the disabled and paralyzed people. Here we have one accelerometer in our hand which will recognize our hand gesture (by measuring the gravitational acceleration) which will get read by the microcontroller and transmitte that information with the help of RF Module to the system. Then the system will form its actions according to the information data which is received.",
+            "tags": [
+                "Arduino IDE (Integrated development Environment)",
+                "Embedded C"
+            ],
+            "category": "college",
+            "subcategory": "mini-project",
+            "githubLink": "https://github.com/sagarshukla010/Gesture-Control-Robotic-Arm"
+        },
+        {
+            "title": "Interface for dumb and deaf peoples.",
+            "description": "Here we have created an electronic circuit interface between disabled (dump and deaf) and normal people so as to form a normal day to day communication between them. Here we have programmed a ATMega-16 IC in which we assigned different commands to different frequency inputs. The frequency input will be given by the dump person to the system with the help of potentiometer (variable resistance) so as to form its thoughts in the LED screen. With the help of this device we can also give instructions to a deaf person. In the circuit we have installed different tactile switches with different commands, by pressing the appropriate switch the required command get displayed on the LED and get read by the disabled person.",
+            "tags": [
+                "Arduino IDE (Integrated development Environment)",
+                "Embedded C"
+            ],
+            "category": "college",
+            "subcategory": "mini-project",
+            "githubLink": ""
+        },
+        {
+            "title": "Research Project : Using SLAM Technology to Provide High Performance and Accuracy in Bots",
+            "description": "Bot technology is proving to be a boon in the current era when Internet has become a necessity for the world. With the advantage that it collects remote data with authentication and authorization using the various automation features, it has added not only to collect data but also to provide it to the desiring users with lot of ease. As now a days the data usage and storage is increasing continuously there is a need for a more accurate and appropriate method which can provide customized and relevant data with respect to the specific need, current algorithms used by search engines google, yahoo and Bing is providing the data in an un-customized manner and it is also very time consuming , due to which the user get lost in the huge data and has to deal with time latency as well. To overcome this, we have proposed a general solution in this paper which can provide better filtering of data specific to the information needed, reduce time latency by using various technologies and algorithms with better accuracy.",
+            "tags": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Authorization",
+                "Role-Based Access Control",
+                "Decision Tree Algorithm",
+                "Security",
+                "Classification"
+            ],
+            "category": "personal",
+            "subcategory": "Research",
+            "githubLink": "https://github.com/sagarshukla010/BotTechnology-using-SLAM"
+        },
+        {
+            "title": "Research Project : Natural Language Processing Technique for Generation of SQL Queries Dynamically",
+            "description": "Natural Language Processing is being used in every field of human to machine interaction. Database queries although have a confined set of instructions, but still found to be complex and dedicated human resources are required to write, test, optimize and execute structured query language statements. This makes it a difficult, time consuming and many a time inaccurate too. Such difficulties can be overcome if the queries are formed dynamically with standard procedures. In this work, parsing, lexical analysis, synonym detection and formation processes of the natural language processing are being proposed to be used for dynamically generating SQL queries and optimization of them for fast processing with high accuracy. NLP parsing of the user inputted text for retrieving, creation and insertion of data are being proposed to be created dynamically from English text inputs. This will help users of the system to generate reports from the data as per the requirement without complexities of the SQL. The proposed system will not only generate queries dynamically but will also provide high accuracy and performance.",
+            "tags": [
+                "Natural Language Processing",
+                "Parsing",
+                "Lexical Analysis",
+                "Structured Query Language",
+                "English Text"
+            ],
+            "category": "personal",
+            "subcategory": "Research",
+            "githubLink": "https://github.com/sagarshukla010/Dynamically-Generation-of-SQL-Queries-Using-NLP"
+        },
+        {
+            "title": "Home Food Mobile Application",
+            "description": "This application makes users order their daily meal by searching their favorite restaurants near their location by tracking it with the map feature, also the application is secured with a Gmail authorization login screen, moreover, a user is also able to create their profile and all this data is stored and hosted by the google firebase.",
+            "tags": [
+                "React-Native", "Redux", "BootStrap", "Google-FireBase"
+            ],
+            "category": "personal",
+            "subcategory": "Other Projects",
+            "githubLink": "https://github.com/sagarshukla010/Home-Food-Mobile-Application"
+        },
+        {
+            "title": "Personal Portfolio Website",
+            "description": "",
+            "tags": [
+                "ReactJS", "BootStrap"
+            ],
+            "category": "personal",
+            "subcategory": "Other Projects",
+            "githubLink": "https://github.com/sagarshukla010/Me-The-Portfolio-Project"
+        },
+        {
+            "title": "Weather Prediction Web-Application",
+            "description": "",
+            "tags": [
+                "NodeJS" , "ExpressJS", "HeroKu"
+            ],
+            "category": "personal",
+            "subcategory": "Other Projects",
+            "githubLink": "https://github.com/sagarshukla010/weather-webApp"
         }
+    ],
+    "certifications": {
+        "Coursera": [
+            {
+                "title": "AWS Developer",
+                "organization": "Amazon",
+                "date": "May 2024",
+                "link": "https://aws.amazon.com"
+            }
+        ],
+        "AWS": [
+            {
+                "title": "DevOps with Docker",
+                "organization": "Udemy",
+                "date": "Sept 2023",
+                "link": "https://udemy.com"
+            }
+        ]
+    }
 }

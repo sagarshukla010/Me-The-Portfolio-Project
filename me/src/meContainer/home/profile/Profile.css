@@ -20,11 +20,11 @@ body {
   align-items: center;
   padding: 3rem 1rem;
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: var(--light-grey);
 }
 
 .profile-parent {
-  background: var(--light-grey);
+  background: var(--white);
   border-radius: 20px;
   box-shadow: 0 8px 20px var(--shadow);
   padding: 2.5rem;

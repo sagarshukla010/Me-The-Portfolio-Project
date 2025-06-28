@@ -17,42 +17,12 @@ import mugunthanImage from "../../assets/Testimonial/MugunthanPic.jpeg";
 
 export default function Testimonial(props) {
 
-  // const [testimonial, setTestimonial] = useState(null);
-
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  // const fadeInSubscription =
+
   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.post(
-  //         "https://me-the-portfolio-project-backend.onrender.com/fetchUserDetails", {},
-  //         {
-  //           params: {
-  //             userId: "admin",
-  //             db: "testimonial",
-  //           },
-  //         }
-  //       )
-  //       console.log("response for testimonials: ", response);
-  //       let responseObj;
-  //       if(response?.status === 200){
-  //         responseObj = response?.data?.response;
-  //       }else{
-  //         responseObj = {};
-  //       }
-  //       setTestimonial(responseObj);
-  //     } catch (error) {
-  //       console.error("error: ",error)
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
 
   let imgAry = [GauravImage, mugunthanImage, padmaImage];
 
@@ -79,7 +49,7 @@ export default function Testimonial(props) {
   };
 
   return (
-    <div>
+    <div className="testimonial-parent">
       <ScreenHeading
         title={"Recommendation"}
         subHeading={"What my collagues and friends say about me"}
@@ -134,12 +104,12 @@ export default function Testimonial(props) {
           </div>
         </div>
       </section>
-      <div className="footer-image">
+      {/* <div className="footer-image">
         <img
           src={require("../../assets/Home/shape-bg.png")}
           alt="no.. internet connection"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
