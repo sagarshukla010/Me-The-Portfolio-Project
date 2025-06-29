@@ -10,7 +10,7 @@ import "./Research.css";
 
 export default function Research() {
   return (
-    <section className="research-section" id="research">
+    <section className="research-section" id="Research">
        <ScreenHeading
         title="Research & Publications"
         subHeading="Selected works and technical investigations"
