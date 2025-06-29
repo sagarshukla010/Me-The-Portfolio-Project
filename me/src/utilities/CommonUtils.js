@@ -5,6 +5,7 @@ import Testimonial from "../meContainer/testimonial/Testimonial";
 import ContactMe from "../meContainer/contactMe/ContactMe";
 import Research from "../meContainer/research/Research";
 import Projects from "../meContainer/projects/Projects"
+import Skills from "../meContainer/skills/Skills"
 // import Certifications from "../meContainer/certifications/Certifications"
 
 export const TOTAL_SCREEN = [
@@ -19,6 +20,10 @@ export const TOTAL_SCREEN = [
   {
     screen_name: "Resume",
     component: Resume,
+  },
+  {
+    screen_name: "Skills",
+    component: Skills,
   },
   {
     screen_name: "Projects",
