@@ -8,39 +8,9 @@
             {
                 "label": "Internships",
                 "logoSrc": "work-history.svg"
-            },
-            {
-                "label": "Education",
-                "logoSrc": "education.svg"
             }
         ],
         "resumeDetails": {
-            "educationDetails": [
-                {
-                    "heading": "BITS(BIRLA Institute of Technology and Sciences) Pilani",
-                    "subHeading": "Master of Technology(M.Tech) in AI & ML",
-                    "fromDate": "2023",
-                    "toDate": "2025"
-                },
-                {
-                    "heading": "Gyan Ganga Institute of Technology and Sciences",
-                    "subHeading": "Bachelors of Engineering in Electronics and Communication, CGPA: 8.46",
-                    "fromDate": "2015",
-                    "toDate": "2019"
-                },
-                {
-                    "heading": "Advance Cource in Computer Hardware Maintainance",
-                    "subHeading": "Studied the computer parts assambling and deassembling, windows command line and BIOS Setup",
-                    "fromDate": "2015",
-                    "toDate": "2015"
-                },
-                {
-                    "heading": "Small Wonder Senior Secondary School",
-                    "subHeading": "Specialization in Physics, Chemistry, Maths and Computer Science, XII: 62%, X: 79.80%.",
-                    "fromDate": "2013",
-                    "toDate": "2015"
-                }
-            ],
             "workHistory": [
                 {
                     "heading": "TATA Consultancy Services - Full Time",
@@ -664,5 +634,37 @@
                 "logo": "vscode/vscode-original.svg"
             }
         ]
-    }
+    },
+    "education": [
+        {
+            "degree": "Masters of Technology in Artificial Intelligance & Machine Learning",
+            "institution": "Birla Institute of Technology and Sciences(BITS) - Pilani",
+            "duration": "2023 - 2025",
+            "description": "Specialization in Natural Language Processing(NLP)."
+        },
+        {
+            "degree": "Bachelor of Engineering in Electronics and Communication",
+            "institution": "Gyan Ganga Institute of Technology and Sciences",
+            "duration": "2015 - 2019",
+            "description": "Graduated with Honors, Grade: A, CGPA: 8.46, Percentage: 84.6%"
+        },
+        {
+            "degree": "Advance Cource in Computer Hardware Maintainance",
+            "institution": "Pioneer Computers",
+            "duration": "2015 - 2015",
+            "description": "Studied the computer parts assambling and deassembling, windows command line and BIOS Setup"
+        },
+        {
+            "degree": "12th (PCM)",
+            "institution": "Small Wonder Senior Secondary School",
+            "duration": "2014 - 2015",
+            "description": "Completed 12th grade with Physics, Chemistry, and Mathematics."
+        },
+        {
+            "degree": "10th",
+            "institution": "Small Wonder Senior Secondary School",
+            "duration": "2012 - 2013",
+            "description": "CGPA: 8.40, Percentage: 79.80%"
+        }
+    ]
 }

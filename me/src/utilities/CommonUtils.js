@@ -6,6 +6,7 @@ import ContactMe from "../meContainer/contactMe/ContactMe";
 import Research from "../meContainer/research/Research";
 import Projects from "../meContainer/projects/Projects"
 import Skills from "../meContainer/skills/Skills"
+import Education from "../meContainer/experience/Education";
 // import Certifications from "../meContainer/certifications/Certifications"
 
 export const TOTAL_SCREEN = [
@@ -28,6 +29,10 @@ export const TOTAL_SCREEN = [
   {
     screen_name: "Projects",
     component: Projects,
+  },
+  {
+    screen_name: "Education",
+    component: Education
   },
   {
     screen_name: "Research",
