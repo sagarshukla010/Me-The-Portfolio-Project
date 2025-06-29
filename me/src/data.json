@@ -368,20 +368,112 @@
         }
     ],
     "certifications": {
-        "Coursera": [
+        "LinkedIn": [
             {
-                "title": "AWS Developer",
-                "organization": "Amazon",
-                "date": "May 2024",
-                "link": "https://aws.amazon.com"
+                "title": "Learning Node.js",
+                "organization": "LinkedIn",
+                "date": "Dec 2020",
+                "link": ""
+            },
+            {
+                "title": "Kafka Essential Training",
+                "organization": "LinkedIn",
+                "date": "Apr 2020",
+                "link": ""
+            },
+            {
+                "title": "Git Essential Training: The Basics",
+                "organization": "LinkedIn",
+                "date": "Jan 2020",
+                "link": ""
+            },
+            {
+                "title": "Learning FPGA Development",
+                "organization": "LinkedIn",
+                "date": "Sep 2019",
+                "link": ""
             }
         ],
-        "AWS": [
+        "Coursera": [
             {
-                "title": "DevOps with Docker",
-                "organization": "Udemy",
-                "date": "Sept 2023",
-                "link": "https://udemy.com"
+                "title": "RESTful API with HTTP and Javascript",
+                "organization": "Coursera",
+                "date": "Jun 2020",
+                "credentialId": "d1009d6ab44ccc85fff7073639de75cc",
+                "link": ""
+            },
+            {
+                "title": "Computer Vision Basics",
+                "organization": "Coursera",
+                "date": "Feb 2020",
+                "credentialId": "16132e49b35b69a88da6dd9aa100cf59",
+                "link": ""
+            },
+            {
+                "title": "Introduction to Programming with MATLAB",
+                "organization": "Coursera",
+                "date": "Aug 2019",
+                "credentialId": "9EQJ4M6KHSEQ",
+                "link": ""
+            }
+        ],
+        "edX": [
+            {
+                "title": "The Quantum Internet and Quantum Computers",
+                "organization": "edX",
+                "date": "Feb 2020",
+                "credentialId": "1c2948b3ca1f44608d1a8509a2cfe383",
+                "link": ""
+            }
+        ],
+        "Lynda.com": [
+            {
+                "title": "Java Essential Training : Syntax and Structures",
+                "organization": "Lynda.com",
+                "date": "Dec 2019",
+                "credentialId": "3DA0B7B99202413DABE810A1212CFEB3",
+                "link": ""
+            },
+            {
+                "title": "Excel 2013 Essential Training",
+                "organization": "Lynda.com",
+                "date": "Aug 2019",
+                "link": ""
+            },
+            {
+                "title": "Learning Python",
+                "organization": "Lynda.com",
+                "date": "Aug 2019",
+                "link": ""
+            }
+        ],
+        "MathWorks": [
+            {
+                "title": "Deep Learning Onramp",
+                "organization": "MathWorks",
+                "date": "Nov 2019",
+                "link": ""
+            },
+            {
+                "title": "Simulink Onramp",
+                "organization": "MathWorks",
+                "date": "Oct 2019",
+                "link": ""
+            },
+            {
+                "title": "Matlab Onramp",
+                "organization": "MathWorks",
+                "date": "Sep 2019",
+                "link": ""
+            }
+        ],
+        "Intel Corporation": [
+            {
+                "title": "AI From the Data Center to the Edge – An Optimized Path Using Intel® Architecture",
+                "organization": "Intel Corporation",
+                "date": "Sep 2019",
+                "credentialId": "13789003",
+                "link": ""
             }
         ]
     },
@@ -541,58 +633,57 @@
     ],
     "experience": [
         {
-          "company": "TATA Consultancy Services",
-          "role": "IT Analyst",
-          "type": "Full Time",
-          "duration": "Nov 2024 - Present",
-          "details": []
+            "company": "TATA Consultancy Services",
+            "role": "IT Analyst",
+            "type": "Full Time",
+            "duration": "Nov 2024 - Present",
+            "details": []
         },
         {
-          "company": "Tech Mahindra Limited",
-          "role": "Sr. Software Engineer",
-          "type": "Full Time",
-          "duration": "Dec 2022 - Oct 2024",
-          "details": []
+            "company": "Tech Mahindra Limited",
+            "role": "Sr. Software Engineer",
+            "type": "Full Time",
+            "duration": "Dec 2022 - Oct 2024",
+            "details": []
         },
         {
-          "company": "Cognizant Technology Solutions",
-          "role": "Jr. Software Engineer",
-          "type": "Full Time",
-          "duration": "Nov 2021 - Dec 2022",
-          "details": []
+            "company": "Cognizant Technology Solutions",
+            "role": "Jr. Software Engineer",
+            "type": "Full Time",
+            "duration": "Nov 2021 - Dec 2022",
+            "details": []
         },
         {
-          "company": "Jio Platforms Limited",
-          "role": "Graduate Engineering Trainee",
-          "type": "Full Time",
-          "duration": "Jul 2019 - Oct 2021",
-          "details": []
+            "company": "Jio Platforms Limited",
+            "role": "Graduate Engineering Trainee",
+            "type": "Full Time",
+            "duration": "Jul 2019 - Oct 2021",
+            "details": []
         },
         {
-          "company": "ELTP Jabalpur",
-          "role": "Assistant Faculty",
-          "type": "Part Time",
-          "duration": "1st - 30th June 2019",
-          "details": []
+            "company": "ELTP Jabalpur",
+            "role": "Assistant Faculty",
+            "type": "Part Time",
+            "duration": "1st - 30th June 2019",
+            "details": []
         },
         {
-          "company": "BrahMos Aerospace",
-          "role": "Internship Trainee",
-          "type": "Internship",
-          "duration": "1st - 28th July 2019",
-          "details": [
-            "Implementation and usage of AI, ML, VR/AR, and Computer Vision in Missile Integration, Missile Guidance System, DOC Seeker, Missile Control System, and Missile Engines (RAM JET and SCRAM JET)."
-          ]
+            "company": "BrahMos Aerospace",
+            "role": "Internship Trainee",
+            "type": "Internship",
+            "duration": "1st - 28th July 2019",
+            "details": [
+                "Implementation and usage of AI, ML, VR/AR, and Computer Vision in Missile Integration, Missile Guidance System, DOC Seeker, Missile Control System, and Missile Engines (RAM JET and SCRAM JET)."
+            ]
         },
         {
-          "company": "Bharat Sanchar Nigam Limited",
-          "role": "Internship Trainee",
-          "type": "Internship",
-          "duration": "1st - 15th June 2018",
-          "details": [
-            "Studied telecommunication concepts including signal processing and analysis of 2G (GSM), 3G (WCDMA), 3.75 (HSPA+), 4G (LTE & VoLTE), and 5G technologies using MATLAB, along with physical components such as antennas, oscillators, etc."
-          ]
+            "company": "Bharat Sanchar Nigam Limited",
+            "role": "Internship Trainee",
+            "type": "Internship",
+            "duration": "1st - 15th June 2018",
+            "details": [
+                "Studied telecommunication concepts including signal processing and analysis of 2G (GSM), 3G (WCDMA), 3.75 (HSPA+), 4G (LTE & VoLTE), and 5G technologies using MATLAB, along with physical components such as antennas, oscillators, etc."
+            ]
         }
-      ]
-           
+    ]
 }

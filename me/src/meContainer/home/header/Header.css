@@ -45,6 +45,7 @@
 .header-options {
   display: flex;
   align-items: center;
+  /* padding-left: 90px; */
   transition: all 0.3s ease-in-out;
 }
 

@@ -3,11 +3,11 @@ import Aboutme from "../meContainer/aboutMe/Aboutme";
 import Testimonial from "../meContainer/testimonial/Testimonial";
 import ContactMe from "../meContainer/contactMe/ContactMe";
 import Research from "../meContainer/research/Research";
-import Projects from "../meContainer/projects/Projects"
-import Skills from "../meContainer/skills/Skills"
+import Projects from "../meContainer/projects/Projects";
+import Skills from "../meContainer/skills/Skills";
 import Education from "../meContainer/education/Education";
 import Experience from "../meContainer/experience/Experience";
-// import Certifications from "../meContainer/certifications/Certifications"
+import Certifications from "../meContainer/certifications/Certifications"
 
 export const TOTAL_SCREEN = [
   {
@@ -28,20 +28,20 @@ export const TOTAL_SCREEN = [
   },
   {
     screen_name: "Experience",
-    component: Experience
+    component: Experience,
   },
   {
     screen_name: "Education",
-    component: Education
+    component: Education,
   },
   {
     screen_name: "Research",
     component: Research,
   },
-  // {
-  //   screen_name: "Certifications",
-  //   component: Certifications,
-  // },
+  {
+    screen_name: "Certifications",
+    component: Certifications,
+  },
   {
     screen_name: "Testimonial",
     component: Testimonial,
