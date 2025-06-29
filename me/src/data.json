@@ -296,7 +296,7 @@
             "category": "work",
             "subcategory": "TATA Consultancy Services Limited",
             "githubLink": ""
-        }, 
+        },
         {
             "title": "Lusa Coaching Notes Insights",
             "description": "Build the backend on python with integrating it with Generative AI tool to generate the summary for the coaching Notes stored in the postgresQL Database.",
@@ -492,7 +492,10 @@
             "title": "Home Food Mobile Application",
             "description": "This application makes users order their daily meal by searching their favorite restaurants near their location by tracking it with the map feature, also the application is secured with a Gmail authorization login screen, moreover, a user is also able to create their profile and all this data is stored and hosted by the google firebase.",
             "tags": [
-                "React-Native", "Redux", "BootStrap", "Google-FireBase"
+                "React-Native",
+                "Redux",
+                "BootStrap",
+                "Google-FireBase"
             ],
             "category": "personal",
             "subcategory": "Other Projects",
@@ -502,7 +505,8 @@
             "title": "Personal Portfolio Website",
             "description": "",
             "tags": [
-                "ReactJS", "BootStrap"
+                "ReactJS",
+                "BootStrap"
             ],
             "category": "personal",
             "subcategory": "Other Projects",
@@ -512,7 +516,9 @@
             "title": "Weather Prediction Web-Application",
             "description": "",
             "tags": [
-                "NodeJS" , "ExpressJS", "HeroKu"
+                "NodeJS",
+                "ExpressJS",
+                "HeroKu"
             ],
             "category": "personal",
             "subcategory": "Other Projects",
@@ -534,6 +540,128 @@
                 "organization": "Udemy",
                 "date": "Sept 2023",
                 "link": "https://udemy.com"
+            }
+        ]
+    },
+    "skillsCategorized": {
+        "Frontend": [
+            {
+                "name": "HTML5",
+                "level": "Advanced",
+                "logo": "html5/html5-original.svg"
+            },
+            {
+                "name": "CSS3",
+                "level": "Advanced",
+                "logo": "css3/css3-original.svg"
+            },
+            {
+                "name": "JavaScript",
+                "level": "Advanced",
+                "logo": "javascript/javascript-original.svg"
+            },
+            {
+                "name": "TypeScript",
+                "level": "Advanced",
+                "logo": "typescript/typescript-original.svg"
+            },
+            {
+                "name": "React.js",
+                "level": "Advanced",
+                "logo": "redux/redux-original.svg"
+            },
+            {
+                "name": "Redux.js",
+                "level": "Advanced",
+                "logo": "react/react-original.svg"
+            },
+            {
+                "name": "Vue.js",
+                "level": "Advanced",
+                "logo": "vuejs/vuejs-original.svg"
+            },
+            {
+                "name": "Nuxt.js",
+                "level": "Advanced",
+                "logo": "nuxtjs/nuxtjs-original.svg"
+            }
+        ],
+        "Backend": [
+            {
+                "name": "Node.js",
+                "level": "Intermediate",
+                "logo": "nodejs/nodejs-original.svg"
+            },
+            {
+                "name": "Express.js",
+                "level": "Intermediate",
+                "logo": "express/express-original.svg"
+            },
+            {
+                "name": "Python",
+                "level": "Intermediate",
+                "logo": "python/python-original.svg"
+            }
+        ],
+        "DataBase": [
+            {
+                "name": "MySql",
+                "level": "Intermediate",
+                "logo": "mysql/mysql-original.svg"
+            },
+            {
+                "name": "PostGreSQL",
+                "level": "Intermediate",
+                "logo": "postgresql/postgresql-original.svg"
+            },
+            {
+                "name": "MongoDB",
+                "level": "Intermediate",
+                "logo": "mongodb/mongodb-original.svg"
+            },
+            {
+                "name": "Redis",
+                "level": "Intermediate",
+                "logo": "redis/redis-original.svg"
+            }
+        ],
+        "DevOps & Cloud": [
+            {
+                "name": "AWS",
+                "level": "Beginner",
+                "logo": "awk/awk-original-wordmark.svg"
+            },
+            {
+                "name": "Jenkins",
+                "level": "Beginner",
+                "logo": "jenkins/jenkins-original.svg"
+            },
+            {
+                "name": "Docker",
+                "level": "Beginner",
+                "logo": "docker/docker-original.svg"
+            },
+            {
+                "name": "Kubernetes",
+                "level": "Beginner",
+                "logo": "kubernetes/kubernetes-original.svg"
+            }
+        ],
+        "Tools & Others": [
+            {
+                "name": "Git",
+                "level": "Advanced",
+                "logo": "git/git-original.svg"
+            },
+            {
+                "name": "Postman",
+                "level": "Intermediate",
+                "logo": "postman/postman-original.svg"
+            },
+            {
+                "name": "VS Code",
+                "level": "Advanced",
+                "logo": "vscode/vscode-original.svg"
             }
         ]
     }

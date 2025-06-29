@@ -5,7 +5,7 @@ import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 
 export default function Projects() {
   const [mainTab, setMainTab] = useState("work");
-  const [nestedTab, setNestedTab] = useState("tcs");
+  const [nestedTab, setNestedTab] = useState("TATA Consultancy Services Limited");
 
   const nestedTabs = {
     work: ["TATA Consultancy Services Limited", "Tech Mahindra Limited", "Cognizant Technology Solutions", "Jio Platforms Limited"],
