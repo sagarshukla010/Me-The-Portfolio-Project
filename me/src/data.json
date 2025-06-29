@@ -666,5 +666,61 @@
             "duration": "2012 - 2013",
             "description": "CGPA: 8.40, Percentage: 79.80%"
         }
-    ]
+    ],
+    "experience": [
+        {
+          "company": "TATA Consultancy Services",
+          "role": "IT Analyst",
+          "type": "Full Time",
+          "duration": "Nov 2024 - Present",
+          "details": []
+        },
+        {
+          "company": "Tech Mahindra Limited",
+          "role": "Sr. Software Engineer",
+          "type": "Full Time",
+          "duration": "Dec 2022 - Oct 2024",
+          "details": []
+        },
+        {
+          "company": "Cognizant Technology Solutions",
+          "role": "Jr. Software Engineer",
+          "type": "Full Time",
+          "duration": "Nov 2021 - Dec 2022",
+          "details": []
+        },
+        {
+          "company": "Jio Platforms Limited",
+          "role": "Graduate Engineering Trainee",
+          "type": "Full Time",
+          "duration": "Jul 2019 - Oct 2021",
+          "details": []
+        },
+        {
+          "company": "ELTP Jabalpur",
+          "role": "Assistant Faculty",
+          "type": "Part Time",
+          "duration": "1st - 30th June 2019",
+          "details": []
+        },
+        {
+          "company": "BrahMos Aerospace",
+          "role": "Internship Trainee",
+          "type": "Internship",
+          "duration": "1st - 28th July 2019",
+          "details": [
+            "Implementation and usage of AI, ML, VR/AR, and Computer Vision in Missile Integration, Missile Guidance System, DOC Seeker, Missile Control System, and Missile Engines (RAM JET and SCRAM JET)."
+          ]
+        },
+        {
+          "company": "Bharat Sanchar Nigam Limited",
+          "role": "Internship Trainee",
+          "type": "Internship",
+          "duration": "1st - 15th June 2018",
+          "details": [
+            "Studied telecommunication concepts including signal processing and analysis of 2G (GSM), 3G (WCDMA), 3.75 (HSPA+), 4G (LTE & VoLTE), and 5G technologies using MATLAB, along with physical components such as antennas, oscillators, etc."
+          ]
+        }
+      ]
+           
 }
