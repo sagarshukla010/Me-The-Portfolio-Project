@@ -397,21 +397,21 @@
         "Coursera": [
             {
                 "title": "RESTful API with HTTP and Javascript",
-                "organization": "Coursera",
+                "organization": "Coursera - Coursera Project Network",
                 "date": "Jun 2020",
                 "credentialId": "d1009d6ab44ccc85fff7073639de75cc",
                 "link": ""
             },
             {
                 "title": "Computer Vision Basics",
-                "organization": "Coursera",
+                "organization": "Coursera - University at Buffalo",
                 "date": "Feb 2020",
                 "credentialId": "16132e49b35b69a88da6dd9aa100cf59",
                 "link": ""
             },
             {
                 "title": "Introduction to Programming with MATLAB",
-                "organization": "Coursera",
+                "organization": "Coursera - Vanderbilt University",
                 "date": "Aug 2019",
                 "credentialId": "9EQJ4M6KHSEQ",
                 "link": ""
@@ -474,6 +474,15 @@
                 "date": "Sep 2019",
                 "credentialId": "13789003",
                 "link": ""
+            }
+        ],
+        "Udemy": [
+            {
+                "title": "The Ultimate ReactJS Responsive Portfolio Website",
+                "organization": "Udemy",
+                "date": "12th March 2023",
+                "credentialId": "UC-18095858-b003-45e3-a495-2b8edcf86bcd",
+                "link": "ude.my/UC-18095858-b003-45e3-a495-2b8edcf86bcd"
             }
         ]
     },
