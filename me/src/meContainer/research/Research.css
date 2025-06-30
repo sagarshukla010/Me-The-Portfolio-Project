@@ -1,82 +1,156 @@
+:root {
+  --white: #ffffff;
+  --dark-orange: #ff6a00;
+  --light-grey: #f7f7f7;
+  --highlight: #fff3e6;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Section Container */
 .research-section {
-    padding: 80px 20px;
-    background-color: var(--light-grey);
-    text-align: center;
+  padding: 80px 20px;
+  background-color: var(--light-grey);
+  text-align: center;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Header */
+.research-header h2 {
+  font-size: 2.5rem;
+  color: var(--dark-orange);
+  margin-bottom: 10px;
+  animation: fadeSlideDown 0.6s ease forwards;
+}
+
+.research-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  animation: fadeSlideDown 0.6s ease forwards;
+}
+
+/* Swiper Container */
+.research-swiper {
+  padding-bottom: 60px;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideFadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Individual Card */
+.research-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 16px var(--shadow);
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeUp 0.6s ease forwards;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.research-card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.research-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* Tags */
+.tags {
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--dark-orange);
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  border-radius: 30px;
+  margin: 3px 6px 3px 0;
+}
+
+/* Download Button */
+.download-btn {
+  text-decoration: none;
+  background-color: var(--dark-orange);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+  align-self: start;
+}
+
+.download-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.03);
+}
+
+/* Animations */
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
   .research-header h2 {
-    font-size: 2.5rem;
-    color: var(--dark-orange);
-    margin-bottom: 10px;
+    font-size: 2rem;
   }
-  
-  .research-header p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .research-swiper {
-    padding-bottom: 60px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
+
   .research-card {
-    background: var(--white);
-    border-radius: 16px;
-    padding: 25px 20px;
-    box-shadow: 0 4px 16px var(--shadow);
-    text-align: left;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease;
+    padding: 20px;
   }
-  
-  .research-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .research-card h3 {
-    font-size: 1.4rem;
-    color: #222;
-    margin-bottom: 10px;
-  }
-  
-  .research-card p {
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 12px;
-  }
-  
-  .tags {
-    margin-bottom: 14px;
-  }
-  
+
   .tag {
-    display: inline-block;
-    background-color: var(--highlight);
-    color: var(--dark-orange);
-    padding: 5px 12px;
-    font-size: 0.85rem;
-    border-radius: 30px;
-    margin: 3px 6px 3px 0;
+    font-size: 0.75rem;
   }
-  
-  .download-btn {
-    text-decoration: none;
-    background-color: var(--dark-orange);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-    align-self: start;
-  }
-  
-  .download-btn:hover {
-    background-color: #e65c00;
-  }
-  
+}

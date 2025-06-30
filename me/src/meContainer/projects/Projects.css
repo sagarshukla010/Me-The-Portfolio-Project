@@ -1,14 +1,25 @@
+:root {
+  --white: #ffffff;
+  --dark-orange: #ff6a00;
+  --light-grey: #f7f7f7;
+  --highlight: #fff7e7;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --text-dark: #1f2235;
+  --gradient: linear-gradient(to right, #ff6a00, #faae42);
+}
+
 .project-section {
   padding: 80px 20px;
   background-color: var(--light-grey);
   text-align: center;
+  animation: fadeInUp 1s ease;
 }
 
 .project-heading {
   font-size: 2.5rem;
   color: var(--dark-orange);
   margin-bottom: 40px;
-  text-align: center;
+  animation: fadeSlideDown 1s ease;
 }
 
 .project-tabs,
@@ -18,13 +29,14 @@
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
 }
 
 .project-tab-button {
   padding: 10px 20px;
   border: 1px solid #ccc;
   background-color: white;
-  color: #1f2235;
+  color: var(--text-dark);
   font-weight: 500;
   border-radius: 25px;
   cursor: pointer;
@@ -33,15 +45,15 @@
 }
 
 .project-tab-button:hover {
-  background-color: #ff5823;
+  background-color: var(--dark-orange);
   color: white;
-  border-color: #ff5823;
+  border-color: var(--dark-orange);
 }
 
 .project-active {
-  background-color: #ff5823;
+  background-color: var(--dark-orange);
   color: white;
-  border-color: #ff5823;
+  border-color: var(--dark-orange);
 }
 
 .project-cards-container {
@@ -52,6 +64,7 @@
   margin-top: 30px;
 }
 
+/* Project Card Animation */
 .project-card {
   width: 320px;
   background-color: white;
@@ -59,16 +72,25 @@
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardFadeInUp 0.6s forwards;
 }
 
+.project-cards-container .project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-cards-container .project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-cards-container .project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-cards-container .project-card:nth-child(4) { animation-delay: 0.4s; }
+/* Add more if needed */
+
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
 }
 
 .project-title {
   font-size: 20px;
   font-weight: 600;
-  color: #1f2235;
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
@@ -87,28 +109,79 @@
 }
 
 .project-tag {
-  background-color: #1f2235;
+  background-color: var(--text-dark);
   color: white;
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 15px;
   font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.project-tag:hover {
+  background-color: var(--dark-orange);
 }
 
 .project-button {
   display: inline-flex;
   align-items: center;
   padding: 8px 12px;
-  background-color: #1f2235;
+  background-color: var(--text-dark);
   color: white;
   font-size: 14px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-button:hover {
-  background-color: #ff5823;
-  color: white;
+  background-color: var(--dark-orange);
+  transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .project-card {
+    width: 90%;
+  }
+
+  .project-heading {
+    font-size: 2rem;
+  }
+
+  .project-tab-button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 }

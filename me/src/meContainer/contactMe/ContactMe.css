@@ -9,12 +9,14 @@
   --border-glass: rgba(255, 255, 255, 0.3);
 }
 
+/* Wrapper */
 .main-container {
   min-height: 100vh;
   background: var(--light-grey);
   padding: 60px 20px;
 }
 
+/* Glassmorphism Form */
 .central-form {
   max-width: 1100px;
   margin: 0 auto;
@@ -28,28 +30,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp 1.2s ease;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Heading */
 .central-form h2 {
   color: #1f2235;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
+  animation: fadeIn 1s ease forwards;
 }
 
+/* Social Icons */
 .col a {
   margin: 0 12px;
   color: #1f2235;
@@ -62,6 +56,7 @@
   color: var(--dark-orange);
 }
 
+/* Layout: Image + Form */
 .back-form {
   display: flex;
   flex-direction: column;
@@ -69,6 +64,7 @@
   align-items: center;
   width: 100%;
   margin-top: 40px;
+  animation: fadeInUp 1.4s ease;
 }
 
 .img-back {
@@ -86,8 +82,14 @@
   width: 260px;
   border-radius: 12px;
   box-shadow: 0 8px 24px var(--shadow);
+  transition: transform 0.3s ease;
 }
 
+.img-back img:hover {
+  transform: scale(1.05);
+}
+
+/* Form */
 form {
   background: var(--white);
   padding: 30px;
@@ -97,27 +99,22 @@ form {
   box-shadow: 0 8px 30px var(--shadow);
   display: flex;
   flex-direction: column;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
+  animation: slideFadeUp 1.6s ease;
 }
 
 form:hover {
   transform: translateY(-4px);
 }
 
-form p {
-  color: var(--dark-orange);
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 14px;
-  letter-spacing: 0.8px;
-}
-
+/* Floating Label Inputs */
 form label {
   color: #1f2235;
   font-weight: 500;
   margin-bottom: 6px;
   margin-top: 10px;
+  display: block;
+  transition: all 0.3s ease;
 }
 
 form input,
@@ -129,7 +126,7 @@ form textarea {
   border-radius: 10px;
   margin-bottom: 20px;
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 form input:focus,
@@ -138,6 +135,17 @@ form textarea:focus {
   background-color: var(--white);
 }
 
+/* Feedback message */
+form p {
+  color: var(--dark-orange);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+
+/* Submit button */
 .send-btn {
   display: flex;
   justify-content: center;
@@ -163,10 +171,44 @@ form button:hover {
   background: linear-gradient(to right, #e65c00, #faae42);
 }
 
+/* Loader Icon */
 button .load img {
   width: 22px;
 }
 
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Layout */
 @media (min-width: 940px) {
   .back-form {
     flex-direction: row;
