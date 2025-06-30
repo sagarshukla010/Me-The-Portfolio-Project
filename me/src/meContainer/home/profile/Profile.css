@@ -20,8 +20,11 @@ body {
   align-items: center;
   padding: 3rem 1rem;
   min-height: 100vh;
-  background-color: var(--light-grey);
+  background-color: transparent; /* Let Vanta background show */
+  position: relative;
+  overflow: hidden;
 }
+
 
 .profile-parent {
   background: var(--white);
