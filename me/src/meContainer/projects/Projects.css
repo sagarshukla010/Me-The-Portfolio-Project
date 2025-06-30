@@ -1,6 +1,7 @@
 .project-section {
   padding: 80px 20px;
   background-color: var(--light-grey);
+  text-align: center;
 }
 
 .project-heading {

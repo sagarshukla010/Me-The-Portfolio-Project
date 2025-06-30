@@ -5,12 +5,19 @@ import ScreenHeading from "../../utilities/screenHeading/ScreenHeading";
 
 export default function Projects() {
   const [mainTab, setMainTab] = useState("work");
-  const [nestedTab, setNestedTab] = useState("TATA Consultancy Services Limited");
+  const [nestedTab, setNestedTab] = useState(
+    "TATA Consultancy Services Limited"
+  );
 
   const nestedTabs = {
-    work: ["TATA Consultancy Services Limited", "Tech Mahindra Limited", "Cognizant Technology Solutions", "Jio Platforms Limited"],
+    work: [
+      "TATA Consultancy Services Limited",
+      "Tech Mahindra Limited",
+      "Cognizant Technology Solutions",
+      "Jio Platforms Limited",
+    ],
     college: ["final-year", "mini-project"],
-    personal: ["Research", "Other Projects"]
+    personal: ["Research", "Other Projects"],
   };
 
   const handleMainTabClick = (tab) => {
@@ -20,13 +27,12 @@ export default function Projects() {
 
   const filteredProjects = data?.projects?.filter(
     (project) =>
-      project.category === mainTab &&
-      project.subcategory === nestedTab
+      project.category === mainTab && project.subcategory === nestedTab
   );
 
   return (
     <div className="project-section" id="Projects">
-<ScreenHeading
+      <ScreenHeading
         title="Projects"
         subHeading="Selected works and technical implementations"
       />

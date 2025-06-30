@@ -178,13 +178,32 @@
     text-align: left;
   }
 
-  .timeline-item.left .timeline-content,
+  .timeline-item.left {
+    left: 0;
+    text-align: left;
+  }
+  
+  .timeline-item.right {
+    left: 0%;
+    text-align: left;
+  }
+
+  .timeline-item.left .timeline-content {
+    margin: 0 0 30px 40px;
+  }
   .timeline-item.right .timeline-content {
     margin: 0 0 30px 40px;
   }
 
-  .timeline-item.left .timeline-icon,
-  .timeline-item.right .timeline-icon,
+  .timeline-item.left .timeline-icon {
+    left: -15px;
+    right: auto;
+  }
+  .timeline-item.right .timeline-icon {
+    left: 25px;
+    right: auto;
+  }
+
   .timeline-item .timeline-icon {
     left: 24px;
     right: auto;
