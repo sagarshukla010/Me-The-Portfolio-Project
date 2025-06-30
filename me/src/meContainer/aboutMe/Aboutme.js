@@ -33,13 +33,13 @@ export default function Aboutme(props) {
   const renderHighlight = () => {
     return SCREEN_CONSTANTS?.highlights?.bullets?.map((value, i) => {
       return (
-        <div className="highlight" key={i}>
+        <div className="highlight" key={i} style={{ "--i": i }}>
           <div className="highlight-blob"></div>
           <span>{value}</span>
         </div>
       );
     });
-  };
+  };  
 
   return (
     <div className="about-me-container screen-container" id={props.id || ""}>

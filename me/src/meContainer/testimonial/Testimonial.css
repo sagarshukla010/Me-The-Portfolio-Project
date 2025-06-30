@@ -1,28 +1,37 @@
+:root {
+  --testimonial-bg-overlay: rgba(31, 34, 53, 0.6);
+  --testimonial-primary: tomato;
+  --testimonial-light: #ffffff;
+  --testimonial-dark: #1f2235;
+  --testimonial-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Parent Padding */
 .testimonial-parent {
   padding: 120px 0 0px;
 }
 
+/* Testimonial Section Background */
 .testimonial-section {
-  padding: 80px 0 80px;
+  padding: 80px 0;
   background-image: url("../../assets/Testimonial/bg-1.jpg");
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .testimonial-section::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background-color: var(--testimonial-bg-overlay);
   z-index: -1;
-  opacity: 0.5;
-  background-color: #1f2235;
 }
 
+/* Footer Image Curve */
 .footer-image {
   width: 100%;
   height: 100%;
@@ -38,32 +47,45 @@
   height: 130px;
 }
 
+/* Testimonial Item */
 .testimonial-section .testi-item {
-  background-color: white;
+  background-color: var(--testimonial-light);
   padding: 30px;
   border-radius: 50px 50px 50px 0;
+  box-shadow: 0 6px 20px var(--testimonial-shadow);
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: slideFadeUp 0.8s ease forwards;
 }
 
+.testimonial-section .testi-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px var(--testimonial-shadow);
+}
+
+/* Testimonial Text */
 .testimonial-section .testi-item p {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   margin: 0 0 10px;
-  font-size: italic;
+  font-style: italic;
+  color: var(--testimonial-dark);
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.4s;
 }
 
-.testimonial-section .testi-item p .fa-quote-left {
-  margin-right: 5px;
-  color: tomato;
-}
-
+.testimonial-section .testi-item p .fa-quote-left,
 .testimonial-section .testi-item p .fa-quote-right {
-  margin-left: 5px;
-  color: tomato;
+  color: var(--testimonial-primary);
 }
 
+/* Star Ratings */
 .testimonial-section .testi-comment .stars {
   margin: 0 0 20px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .testimonial-section .testi-comment .stars li {
@@ -73,37 +95,109 @@
 
 .testimonial-section .testi-comment .stars li i {
   font-size: 13px;
-  color: tomato;
+  color: var(--testimonial-primary);
 }
 
+/* Client Info */
 .testimonial-section .client-info {
   position: relative;
   padding-left: 80px;
   padding-top: 5px;
   min-height: 60px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.8s;
 }
 
+/* Client Image */
 .testimonial-section .testi-item .client-info img {
   height: 70px;
   width: 70px;
-  border: 2px solid transparent;
-  border-color: black;
-  left: 0;
-  top: 0;
+  border: 2px solid var(--testimonial-dark);
   border-radius: 50%;
   position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
 }
 
+.testimonial-section .testi-item .client-info img:hover {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+/* Client Name & Role */
 .testimonial-section .client-info h5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
   margin: 0 0 2px;
+  color: var(--testimonial-dark);
 }
 
 .testimonial-section .client-info p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 24px;
   margin: 0;
+  color: #555;
+}
+
+/* ======================= */
+/* Animation Keyframes */
+/* ======================= */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .testimonial-section {
+    padding: 60px 20px;
+  }
+
+  .testimonial-section .testi-item {
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .testimonial-section .client-info {
+    padding-left: 70px;
+  }
+
+  .testimonial-section .testi-item .client-info img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .testimonial-section .testi-item p {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

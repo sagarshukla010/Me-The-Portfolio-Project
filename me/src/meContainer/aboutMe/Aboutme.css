@@ -1,3 +1,12 @@
+:root {
+  --white: #ffffff;
+  --dark-orange: #ff5823;
+  --light-grey: #f7f7f7;
+  --highlight: #fff2ea;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* =================== Container =================== */
 .about-me-container {
   display: flex;
   flex-direction: column;
@@ -14,6 +23,7 @@
   gap: 2rem;
 }
 
+/* =================== Card =================== */
 .about-me-card {
   display: flex;
   background-color: #f9f9f9;
@@ -21,12 +31,14 @@
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  animation: fadeSlideUp 1s ease-out;
 }
 
 .about-me-card:hover {
   transform: translateY(-4px);
 }
 
+/* =================== Profile =================== */
 .about-me-profile {
   width: 45%;
   min-height: 340px;
@@ -34,8 +46,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation: scaleIn 1.2s ease;
+  transition: transform 0.6s ease;
 }
 
+.about-me-profile:hover {
+  transform: scale(1.03);
+}
+
+/* =================== Details =================== */
 .about-me-details {
   padding: 40px 30px;
   width: 55%;
@@ -52,6 +71,7 @@
   color: #444;
 }
 
+/* =================== Highlights =================== */
 .about-me-highlights {
   margin-top: 40px;
 }
@@ -68,16 +88,20 @@
   margin-bottom: 10px;
   font-size: 0.95rem;
   color: #555;
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: calc(0.3s + var(--i, 0) * 0.2s);
 }
 
 .highlight-blob {
   height: 10px;
   width: 10px;
   margin-right: 12px;
-  background-color: #ff5823;
+  background-color: var(--dark-orange);
   border-radius: 50%;
 }
 
+/* =================== Buttons =================== */
 .about-me-options {
   display: flex;
   flex-wrap: wrap;
@@ -96,8 +120,8 @@
 }
 
 .about-me-options .primary-btn {
-  background-color: #ff5823;
-  color: #fff;
+  background-color: var(--dark-orange);
+  color: var(--white);
 }
 
 .about-me-options .primary-btn:hover {
@@ -106,16 +130,39 @@
 
 .about-me-options .highlighted-btn {
   background-color: transparent;
-  border: 2px solid #ff5823;
-  color: #ff5823;
+  border: 2px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 .about-me-options .highlighted-btn:hover {
-  background-color: #fff2ea;
+  background-color: var(--highlight);
   color: #111;
 }
 
-/* Tablet and below */
+/* =================== Animations =================== */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =================== Responsive =================== */
 @media screen and (max-width: 992px) {
   .about-me-card {
     flex-direction: column;
@@ -131,7 +178,6 @@
   }
 }
 
-/* Mobile adjustments */
 @media screen and (max-width: 576px) {
   .about-me-options {
     flex-direction: column;
