@@ -1,20 +1,22 @@
 {
     "aboutMe": {
-        "description": "Greetings, I am a passionate Full Stack Developer with a keen interest in research and innovation within the field of computer science. I currently work at Tata Consultancy Services (TCS), where I contribute to end-to-end software development solutions across various domains. In addition to my core development expertise, I have developed a growing proficiency in Generative AI, Artificial Intelligence (AI), and Machine Learning (ML). My primary tech stack includes Node.js and JavaScript, while for competitive programming, I prefer Java for its performance and reliability. Over the course of my career, I’ve worked with a diverse set of tools and platforms including Kubernetes, Kibana, Postman, Kafka, and Sequelize, enabling me to build scalable, efficient, and robust applications. A strong foundation in data structures and algorithms has helped me significantly optimize backend APIs and improve system performance. I am continuously driven by a curiosity to learn and explore emerging technologies, always seeking new challenges and opportunities to grow in the field of software engineering and AI..",
+        "description": "I am a passionate Full Stack Developer with a strong interest in research and innovation within the field of Computer Science. Currently, I work at Tata Consultancy Services (TCS), where I contribute to end-to-end software development across multiple domains, delivering scalable and efficient solutions. My core tech stack includes Node.js, JavaScript, TypeScript, and modern frameworks such as React.js, Vue.js, and Nuxt.js. On the backend, I have hands-on experience with Express.js and Python, coupled with proficiency in relational and NoSQL databases like PostgreSQL, MySQL, MongoDB, and Redis. In addition to full-stack development, I am building strong capabilities in Generative AI, Artificial Intelligence (AI), and Machine Learning (ML). I’ve also worked with tools and platforms like Kubernetes, Docker, Kafka, Postman, Kibana, and Sequelize, enabling efficient development, monitoring, and deployment pipelines. My foundation in data structures and algorithms has allowed me to design optimized APIs and improve system performance in production-grade applications. For competitive programming, I often rely on Java for its robustness and speed. Driven by curiosity and a continuous learning mindset, I actively explore emerging technologies and embrace new challenges—striving to grow as both a software engineer and AI enthusiast.",
         "highlights": {
             "bullets": [
-                "Full Stack Web and Mobile Development",
-                "Interactive Front end as per the design",
-                "React and React Native",
-                "Redux for state Management",
-                "Building Rest API's",
-                "Managing DataBase"
-            ],
+                "Advanced Front-End Development with React.js, Vue.js, Nuxt.js, HTML5, CSS3, JavaScript, and TypeScript",
+                "Efficient State Management using Redux.js for scalable front-end architecture",
+                "Full-Stack Development with Node.js, Express.js, and Python for building robust backend services",
+                "Experience with Relational and NoSQL Databases: PostgreSQL, MySQL, MongoDB, and Redis",
+                "Foundational Cloud and DevOps skills including AWS, Docker, Kubernetes, and Jenkins for modern CI/CD pipelines",
+                "RESTful API Development and Testing with Postman and Express.js",
+                "Version Control and Team Collaboration using Git and GitHub/GitLab",
+                "Productive Development Workflow using Visual Studio Code and essential developer tools"
+              ],
             "heading": "Here are a few Highlights:"
         }
     },
     "profile": {
-        "profileRoleTagLine": "Software Enginner | NodeJS | ReactJS | Docker | Kubernetes | AI/ML"
+        "profileRoleTagLine": "Transforming Innovative Ideas into Scalable & Robust Applications"
     },
     "testimonial": {
         "peopleDetails": [
