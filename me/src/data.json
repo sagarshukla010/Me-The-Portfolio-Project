@@ -492,12 +492,12 @@
         "Frontend": [
             {
                 "name": "HTML5",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "html5/html5-original.svg"
             },
             {
                 "name": "CSS3",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "css3/css3-original.svg"
             },
             {
@@ -507,7 +507,7 @@
             },
             {
                 "name": "TypeScript",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "typescript/typescript-original.svg"
             },
             {
@@ -517,35 +517,72 @@
             },
             {
                 "name": "Redux.js",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "react/react-original.svg"
             },
             {
                 "name": "Vue.js",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "vuejs/vuejs-original.svg"
             },
             {
                 "name": "Nuxt.js",
-                "level": "Advanced",
+                "level": "Intermediate",
                 "logo": "nuxtjs/nuxtjs-original.svg"
             }
         ],
         "Backend": [
             {
                 "name": "Node.js",
-                "level": "Intermediate",
+                "level": "Advanced",
                 "logo": "nodejs/nodejs-original.svg"
             },
             {
                 "name": "Express.js",
-                "level": "Intermediate",
+                "level": "Advanced",
                 "logo": "express/express-original.svg"
             },
             {
                 "name": "Python",
                 "level": "Intermediate",
                 "logo": "python/python-original.svg"
+            },
+            {
+                "name": "FastAPI",
+                "level": "Intermediate",
+                "logo": "fastapi/fastapi-original.svg"
+            },
+            {
+                "name": "GraphQL",
+                "level": "Intermediate",
+                "logo": "graphql/graphql-plain.svg"
+            },
+            {
+                "name": "Java",
+                "level": "Intermediate",
+                "logo": "java/java-original.svg"
+            },
+            {
+                "name": "JSON",
+                "level": "Intermediate",
+                "logo": "json/json-original.svg"
+            },
+            {
+                "name": "Oauth",
+                "level": "Intermediate",
+                "logo": "oauth/oauth-original.svg"
+            }
+        ],
+        "ORM": [
+            {
+                "name": "Sequelize",
+                "level": "Intermediate",
+                "logo": "sequelize/sequelize-original.svg"
+            },
+            {
+                "name": "Mongoose",
+                "level": "Intermediate",
+                "logo": "mongoose/mongoose-original.svg"
             }
         ],
         "DataBase": [
@@ -577,6 +614,11 @@
                 "logo": "awk/awk-original-wordmark.svg"
             },
             {
+                "name": "Heroku",
+                "level": "Beginner",
+                "logo": "heroku/heroku-original.svg"
+            },
+            {
                 "name": "Jenkins",
                 "level": "Beginner",
                 "logo": "jenkins/jenkins-original.svg"
@@ -590,6 +632,30 @@
                 "name": "Kubernetes",
                 "level": "Beginner",
                 "logo": "kubernetes/kubernetes-original.svg"
+            },
+            {
+                "name": "Putty",
+                "level": "Beginner",
+                "logo": "putty/putty-original.svg"
+            }
+        ],
+        "Monitoring": [
+            {
+                "name": "Kibana",
+                "level": "Intermediate",
+                "logo": "kibana/kibana-original.svg"
+            }
+        ],
+        "Documentation": [
+            {
+                "name": "Confluence",
+                "level": "Intermediate",
+                "logo": "confluence/confluence-original.svg"
+            },
+            {
+                "name": "Swagger",
+                "level": "Intermediate",
+                "logo": "swagger/swagger-original.svg"
             }
         ],
         "Tools & Others": [
@@ -599,14 +665,44 @@
                 "logo": "git/git-original.svg"
             },
             {
+                "name": "GitHub",
+                "level": "Advanced",
+                "logo": "github/github-original.svg"
+            },
+            {
                 "name": "Postman",
                 "level": "Intermediate",
                 "logo": "postman/postman-original.svg"
             },
             {
+                "name": "Insomnia",
+                "level": "Intermediate",
+                "logo": "insomnia/insomnia-original.svg"
+            },
+            {
                 "name": "VS Code",
                 "level": "Advanced",
                 "logo": "vscode/vscode-original.svg"
+            },
+            {
+                "name": "Jupyter",
+                "level": "Advanced",
+                "logo": "jupyter/jupyter-original.svg"
+            },
+            {
+                "name": "Jira",
+                "level": "Advanced",
+                "logo": "jira/jira-original.svg"
+            },
+            {
+                "name": "DBeaver",
+                "level": "Advanced",
+                "logo": "dbeaver/dbeaver-original.svg"
+            },
+            {
+                "name": "Eclipse",
+                "level": "Advanced",
+                "logo": "eclipse/eclipse-original.svg"
             }
         ]
     },
