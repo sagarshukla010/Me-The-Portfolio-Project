@@ -130,30 +130,6 @@
     },
     "projects": [
         {
-            "title": "Canada Contract Management System(CCMS)",
-            "description": "The purpose of HCP contract management system canada is to sign contract with HCP's for providing services to lilly, the system collects data, generates the contract and helps BIO Admin team to keep of each contract.",
-            "tags": [
-                "Vue.js",
-                "python",
-                "PostgresQL"
-            ],
-            "category": "work",
-            "subcategory": "TATA Consultancy Services Limited",
-            "githubLink": ""
-        },
-        {
-            "title": "Lusa Coaching Notes Insights",
-            "description": "Build the backend on python with integrating it with Generative AI tool to generate the summary for the coaching Notes stored in the postgresQL Database.",
-            "tags": [
-                "Generative AI",
-                "python",
-                "AWS"
-            ],
-            "category": "work",
-            "subcategory": "TATA Consultancy Services Limited",
-            "githubLink": ""
-        },
-        {
             "title": "Ziply Fiber Services - Web, D2D, Retail",
             "description": "Developed backend systems using Node.js in a microservices architecture for multiple web applications under the Ziply Fiber account; created both GraphQL and REST APIs to handle complex business logic, with MongoDB as the data store. Optimized all APIs, significantly reducing response time, simplifying business logic, and improving logging and error-handling mechanisms. Followed Agile methodologies, managed tasks using Jira, and participated in regular CI/CD deployments via Jenkins and Docker containers.",
             "tags": [
