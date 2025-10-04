@@ -370,6 +370,15 @@
         }
     ],
     "certifications": {
+        "AWS": [
+            {
+                "title": "AWS Certified Machine Learning Associate",
+                "organization": "AWS",
+                "date": "30th September 2025",
+                "credentialId": "",
+                "link": ""
+            }
+        ],
         "LinkedIn": [
             {
                 "title": "Learning Node.js",
