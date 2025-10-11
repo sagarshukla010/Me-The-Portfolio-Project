@@ -4,6 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+document.addEventListener("visibilitychange", (event) => {
+  if (document.visibilityState === "visible") {
+    document.title = "Sagar Shukla Portfolio";
+  } else {
+    document.title = "Come Back to Portfolio";
+  }
+});
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
