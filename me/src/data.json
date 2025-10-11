@@ -1,4 +1,8 @@
 {
+    "user":{ 
+        "username": "sagarshukla840", 
+        "password": "Quantum5@5" 
+    },
     "aboutMe": {
         "description": "I am a passionate Full Stack Developer with a strong interest in research and innovation within the field of Computer Science. Currently, I work at Tata Consultancy Services (TCS), where I contribute to end-to-end software development across multiple domains, delivering scalable and efficient solutions. My core tech stack includes Node.js, JavaScript, TypeScript, and modern frameworks such as React.js, Vue.js, and Nuxt.js. On the backend, I have hands-on experience with Express.js and Python, coupled with proficiency in relational and NoSQL databases like PostgreSQL, MySQL, MongoDB, and Redis. In addition to full-stack development, I am building strong capabilities in Generative AI, Artificial Intelligence (AI), and Machine Learning (ML). I’ve also worked with tools and platforms like Kubernetes, Docker, Kafka, Postman, Kibana, and Sequelize, enabling efficient development, monitoring, and deployment pipelines. My foundation in data structures and algorithms has allowed me to design optimized APIs and improve system performance in production-grade applications. For competitive programming, I often rely on Java for its robustness and speed. Driven by curiosity and a continuous learning mindset, I actively explore emerging technologies and embrace new challenges—striving to grow as both a software engineer and AI enthusiast.",
         "highlights": {

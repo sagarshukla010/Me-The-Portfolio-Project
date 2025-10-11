@@ -3,20 +3,33 @@ import "./Profile.css";
 import data from "../../../data.json";
 import ScrollService from "../../../utilities/ScrollService";
 
-// If using npm:
-// import * as THREE from "three";
-// import NET from "vanta/dist/vanta.net.min";
-
 export default function Profile() {
   const vantaRef = useRef(null);
   const [vantaEffect, setVantaEffect] = useState(null);
+  const [showLogin, setShowLogin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleContactClick = () => {
     ScrollService.scrollHandler.scrollToContactMe();
   };
 
+  const handleLogin = () => {
+    if (username === data.user.username && password === data.user.password) {
+      setMessage("✅ Login successful!");
+      setTimeout(() => {
+        setShowLogin(false);
+        setMessage("");
+        setUsername("");
+        setPassword("");
+      }, 1200);
+    } else {
+      setMessage("❌ Invalid username or password");
+    }
+  };
+
   useEffect(() => {
-    // Only load Vanta on the client side
     if (!vantaEffect && window.VANTA) {
       setVantaEffect(
         window.VANTA.GLOBE({
@@ -74,6 +87,9 @@ export default function Profile() {
             <a href="resume.pdf" download="Sagar_Shukla_Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
+            <button className="btn primary-btn" onClick={() => setShowLogin(true)}>
+              Login
+            </button>
           </div>
         </div>
 
@@ -81,6 +97,34 @@ export default function Profile() {
           <div className="profile-picture-background" />
         </div>
       </div>
+
+      {showLogin && (
+        <div className="login-popup">
+          <div className="login-popup-content">
+            <h3>Login</h3>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button className="btn primary-btn" onClick={handleLogin}>
+              Submit
+            </button>
+            <br></br>
+            <button className="btn highlighted-btn" onClick={() => setShowLogin(false)}>
+              Close
+            </button>
+            {message && <p className="login-message">{message}</p>}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
