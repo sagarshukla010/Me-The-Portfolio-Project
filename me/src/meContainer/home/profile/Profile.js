@@ -56,13 +56,25 @@ export default function Profile() {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="social-icons">
-            <a href="https://github.com/sagarshukla010" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/sagarshukla010"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-github-square"></i>
             </a>
-            <a href="https://www.youtube.com/@sagarshukla1194" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/@sagarshukla1194"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-youtube-square"></i>
             </a>
-            <a href="https://www.linkedin.com/in/sagar-shukla-b517b416a/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/sagar-shukla-b517b416a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-linkedin-square"></i>
             </a>
           </div>
@@ -87,7 +99,10 @@ export default function Profile() {
             <a href="resume.pdf" download="Sagar_Shukla_Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
-            <button className="btn primary-btn" onClick={() => setShowLogin(true)}>
+            <button
+              className="btn primary-btn"
+              onClick={() => setShowLogin(true)}
+            >
               Login
             </button>
           </div>
@@ -114,13 +129,17 @@ export default function Profile() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button className="btn primary-btn" onClick={handleLogin}>
-              Submit
-            </button>
-            <br></br>
-            <button className="btn highlighted-btn" onClick={() => setShowLogin(false)}>
-              Close
-            </button>
+            <div className="login-btn-group">
+              <button className="btn primary-btn" onClick={handleLogin}>
+                Submit
+              </button>
+              <button
+                className="btn highlighted-btn"
+                onClick={() => setShowLogin(false)}
+              >
+                Close
+              </button>
+            </div>
             {message && <p className="login-message">{message}</p>}
           </div>
         </div>

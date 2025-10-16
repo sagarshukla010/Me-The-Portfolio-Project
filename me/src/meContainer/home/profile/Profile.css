@@ -26,6 +26,18 @@ body {
 }
 
 /* =================== Login Popup =================== */
+
+.login-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* 👈 spacing between buttons */
+  margin-top: 10px;
+}
+
+.login-btn-group .btn {
+  flex: 1;
+}
+
 .login-popup {
   position: fixed;
   top: 0;
@@ -88,8 +100,6 @@ body {
   0% { transform: scale(0.9); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
-
-
 
 .profile-parent {
   background: var(--white);
