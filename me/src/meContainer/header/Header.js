@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { TOTAL_SCREEN, GET_SCREEN_INDEX } from "../../../utilities/CommonUtils";
-import ScrollService from "../../../utilities/ScrollService";
+import { TOTAL_SCREEN, GET_SCREEN_INDEX } from "../../utilities/CommonUtils";
+import ScrollService from "../../utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
