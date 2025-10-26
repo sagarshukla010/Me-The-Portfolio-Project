@@ -6,16 +6,35 @@ import "./Aboutme.css";
 import userData from "../../data.json";
 
 export default function Aboutme(props) {
-
   useEffect(() => {
+    // Existing fade-in logic
     const fadeInScreenHandler = (screen) => {
       if (screen.fadeInScreen !== props.id) return;
       Animations.animations.fadeInScreen(props.id);
     };
-  
-    const subscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-    return () => subscription.unsubscribe();
-  }, [props.id]);  
+
+    const subscription =
+      ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+    // New Intersection Observer for animation trigger
+    const aboutSection = document.getElementById(props.id);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          aboutSection
+            .querySelector(".about-me-card")
+            ?.classList.add("visible");
+        }
+      },
+      { threshold: 0.4 }
+    );
+    if (aboutSection) observer.observe(aboutSection);
+
+    return () => {
+      subscription.unsubscribe();
+      observer.disconnect();
+    };
+  }, [props.id]);
 
   let aboutMe = {};
   if (userData) {
@@ -31,22 +50,20 @@ export default function Aboutme(props) {
   };
 
   const renderHighlight = () => {
-    return SCREEN_CONSTANTS?.highlights?.bullets?.map((value, i) => {
-      return (
-        <div className="highlight" key={i} style={{ "--i": i }}>
-          <div className="highlight-blob"></div>
-          <span>{value}</span>
-        </div>
-      );
-    });
-  };  
+    return SCREEN_CONSTANTS?.highlights?.bullets?.map((value, i) => (
+      <div className="highlight" key={i} style={{ "--i": i }}>
+        <div className="highlight-blob"></div>
+        <span>{value}</span>
+      </div>
+    ));
+  };
 
   return (
     <div className="about-me-container screen-container" id={props.id || ""}>
       <div className="about-me-parent">
         <ScreenHeading
           title={"About Me"}
-          subHeading={"Why Choose me!"}
+          subHeading={"Why Choose Me!"}
           id={props.id || ""}
         />
         <div className="about-me-card">
@@ -55,21 +72,25 @@ export default function Aboutme(props) {
             <span className="about-me-description">
               {SCREEN_CONSTANTS.description}
             </span>
+
             <div className="about-me-highlights">
               <div className="highlight-heading">
                 <span>{SCREEN_CONSTANTS.highlights.heading}</span>
               </div>
               {renderHighlight()}
             </div>
+
             <div className="about-me-options">
               <button
                 className="btn primary-btn"
                 onClick={() => ScrollService.scrollHandler.scrollToContactMe()}
               >
-                {" "}
-                Contact me{" "}
+                Contact Me
               </button>
-              <a href="Sagar_Shukla_Resume_Updated.pdf" download="Sagar Shukla Resume.pdf">
+              <a
+                href="Sagar_Shukla_Resume_Updated.pdf"
+                download="Sagar Shukla Resume.pdf"
+              >
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
