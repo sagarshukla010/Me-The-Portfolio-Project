@@ -99,14 +99,21 @@ body {
   animation: fadeInUp 1s ease-out;
 }
 
+/* ---------- Social Icons ---------- */
 .social-icons {
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  gap: 18px;
+  flex-wrap: nowrap;
 }
 
 .social-icons i {
   font-size: 2rem;
   color: #555;
-  margin-right: 18px;
+  margin-right: 0px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -200,7 +207,7 @@ body {
   transform: scale(1.07);
 }
 
-/* Responsive Adjustments */
+/* ---------- Responsive Rules ---------- */
 @media screen and (max-width: 1024px) {
   .profile-parent {
     flex-direction: column-reverse;
@@ -215,5 +222,77 @@ body {
   }
   .profile-role-tagline {
     font-size: 1rem;
+  }
+  .social-icons {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ----- Tablets (768px and below) ----- */
+@media screen and (max-width: 768px) {
+  .profile-picture {
+    height: 260px;
+    width: 260px;
+  }
+  .profile-details-role h1 {
+    font-size: 2rem;
+  }
+  .profile-details-name {
+    font-size: 1.6rem;
+  }
+  .social-icons {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ----- Small Phones (480px and below) ----- */
+@media screen and (max-width: 480px) {
+  .profile-container {
+    padding: 2rem 0.5rem;
+  }
+  .profile-parent {
+    padding: 1.8rem;
+    border-radius: 12px;
+    gap: 2rem;
+  }
+  .profile-picture {
+    height: 220px;
+    width: 220px;
+  }
+  .social-icons {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.2rem;
+  }
+  .social-icons i {
+    font-size: 1.8rem;
+  }
+}
+
+/* ----- Extra Narrow Devices Galaxy Z Fold 5 / Samsung A8+ (≤360px width) ----- */
+@media screen and (max-width: 360px) {
+  .profile-container {
+    padding: 1.5rem 0.3rem;
+  }
+  .profile-picture {
+    height: 200px;
+    width: 200px;
+  }
+  .profile-details-role h1 {
+    font-size: 1.7rem;
+  }
+  .profile-role-tagline {
+    font-size: 0.9rem;
+  }
+  .social-icons {
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-icons i {
+    font-size: 1.6rem;
   }
 }
