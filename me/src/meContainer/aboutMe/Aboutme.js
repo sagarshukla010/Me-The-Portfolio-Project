@@ -26,7 +26,7 @@ export default function Aboutme(props) {
             ?.classList.add("visible");
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.1 }
     );
     if (aboutSection) observer.observe(aboutSection);
 
